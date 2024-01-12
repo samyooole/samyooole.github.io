@@ -1,1 +1,0 @@
-# samyooole.github.io

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-12T00:55:57-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">samuel ho</title><subtitle>collection of my code projects</subtitle><entry><title type="html">Behind SKIM: LLM-powered Contract AI</title><link href="http://localhost:4000/blog/jekyll/2022/01/10/skim.html" rel="alternate" type="text/html" title="Behind SKIM: LLM-powered Contract AI" /><published>2022-01-10T11:00:00-05:00</published><updated>2022-01-10T11:00:00-05:00</updated><id>http://localhost:4000/blog/jekyll/2022/01/10/skim</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2022/01/10/skim.html">&lt;h1 id=&quot;welcome-to-my-first-post&quot;&gt;Welcome to My First Post&lt;/h1&gt;
+
+&lt;p&gt;This is the content of my first blog post. You can use standard Markdown syntax to format your text.&lt;/p&gt;
+
+&lt;p&gt;Hello, hello:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;example_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;This is a code block example.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="blog" /><category term="jekyll" /><summary type="html">Welcome to My First Post</summary></entry></feed>

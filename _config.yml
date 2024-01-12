@@ -1,0 +1,7 @@
+title: samuel ho
+description: collection of my code projects
+theme: minima
+
+collections:
+  posts:
+    output: true
