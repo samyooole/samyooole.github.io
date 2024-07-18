@@ -1,52 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-13T15:08:45-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">samuel ho</title><subtitle>collection of my code projects</subtitle><entry><title type="html">Behind SKIM: LLM-powered Contract AI</title><link href="http://localhost:4000/blog/jekyll/2022/01/13/skim.html" rel="alternate" type="text/html" title="Behind SKIM: LLM-powered Contract AI" /><published>2022-01-13T08:00:00-08:00</published><updated>2022-01-13T08:00:00-08:00</updated><id>http://localhost:4000/blog/jekyll/2022/01/13/skim</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2022/01/13/skim.html">&lt;p&gt;In this app, I wanted to simplify a key step of the contract review process that many lawyers may have to go through - that is, sifting through the boilerplate in order to establish exactly what obligations are being established between both parties to a contract. You can try it out &lt;a href=&quot;https://skim-react.vercel.app&quot;&gt;here&lt;/a&gt; - if you are using it for the first time, do wait a little bit for the API to warm up; I’m working on a college student’s budget right now ):&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-18T17:54:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Samuel Ho</title><subtitle>I love building bespoke tech solutions for the public good :)</subtitle><entry><title type="html">𝄞watch, a chord detector that runs on Chrome</title><link href="http://localhost:4000/blog/jekyll/2024/07/18/swatch.html" rel="alternate" type="text/html" title="𝄞watch, a chord detector that runs on Chrome" /><published>2024-07-18T10:00:00+08:00</published><updated>2024-07-18T10:00:00+08:00</updated><id>http://localhost:4000/blog/jekyll/2024/07/18/swatch</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2024/07/18/swatch.html"><![CDATA[<p>As a musician, finding the chords for a song is something I do <em>extremely</em> often. Whether I’m arranging for acappella or simply replicating the backbone of a pop song on the piano, knowing the chords of a song are crucial for capturing its essential colour - and provides a contextual springboard from which more musical fun can happen: reharmonizations, new melody lines, mashups, and more!</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/skim-1.gif&quot; alt=&quot;The app in a nutshell&quot; /&gt;
-&lt;em&gt;Put in any contract text in the text box, or as a word document…&lt;/em&gt;&lt;/p&gt;
+<p>Most times, you’ll be able to find the chords for the song you want online on a website like <a href="https://www.ultimate-guitar.com">Ultimate Guitar</a>. But these chords tend to come with a set of issues - maybe they are simplified, or they weren’t transcribed accurately. Sometimes, there’s a song that doesn’t have any transcription at all because it’s simply not well-known enough!</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/skim-2.gif&quot; alt=&quot;filter&quot; /&gt;
-&lt;em&gt;Easily filter for the obligation category you are interested in&lt;/em&gt;&lt;/p&gt;
+<p>In those moments, I wished there was a convenient tool to help me detect chords instantaneously. That is what spurred me to build <strong>𝄞watch</strong>, a Chrome extension that detects chords. It follows in the great tradition of lightweight Chrome extensions like <a href="https://www.colorzilla.com/chrome/">Colorzilla</a> and <a href="https://transpose.video">Transpose</a>, both effective semi-automated tech solutions which automate away the non-essential, thereby allowing the user to exercise their expert judgement. I wanted my extension to be able to instantaneously capture the key of a song, just as Colorzilla could capture the hex code of a colour. I also wanted my extension to perform digital signal processing natively within Chrome, much like Transpose could perform key changes on music on the fly.</p>
 
-&lt;p&gt;This seems like a task right up the alley of artificial intelligence - especially with the latest advancements in natural language processing in the form of large language models! In order to do that, I needed to first establish the key elements of the app that I was going to code up. It would have to take any length of not-necessarily-well-structured text, and be able to detect obligations, then classify them into a pre-defined set of categories that frequently appear across most contracts. These problems are not easy at all, and if you chunk them into their constitutent steps, each would comprise a significant amount of inference that would not have been possible until recently.&lt;/p&gt;
+<p>Introducing… <strong>𝄞watch!</strong></p>
 
-&lt;p&gt;So, in this blog post, I will explain each major step of the app, showing what happens under the hood, and why I made the design/engineering choice that I did. Enjoy!&lt;/p&gt;
+<p><img src="/assets/swatch_atlast_demo.gif" alt="" /></p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><summary type="html"><![CDATA[As a musician, finding the chords for a song is something I do extremely often. Whether I’m arranging for acappella or simply replicating the backbone of a pop song on the piano, knowing the chords of a song are crucial for capturing its essential colour - and provides a contextual springboard from which more musical fun can happen: reharmonizations, new melody lines, mashups, and more!]]></summary></entry><entry><title type="html">Instabus, a customizable bus app for Singapore</title><link href="http://localhost:4000/blog/jekyll/2024/07/17/instabus.html" rel="alternate" type="text/html" title="Instabus, a customizable bus app for Singapore" /><published>2024-07-17T18:00:00+08:00</published><updated>2024-07-17T18:00:00+08:00</updated><id>http://localhost:4000/blog/jekyll/2024/07/17/instabus</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2024/07/17/instabus.html"><![CDATA[<p>Singapore has <em>excellent</em> public transport, but sometimes too much of a good thing can create a few relatively bad options. What do I mean?</p>
 
-&lt;h2 id=&quot;text-classification-via-large-language-models-the-core-of-this-app&quot;&gt;Text classification via large language models: the core of this app&lt;/h2&gt;
+<p>While Singapore’s bus system is extensive, I am rather unfortunate to be living smack in the middle of a town block, something like this:</p>
 
-&lt;p&gt;The core problem of this app was essentially multi-label classification - that is, if I looked at a sentence, I would need to bin it into one of these categories:&lt;/p&gt;
+<p><img src="/assets/idontlivehere.png" alt="" />
+<em>I don’t actually live here, but let’s pretend I do</em></p>
 
-&lt;ol&gt;
-  &lt;li&gt;Termination condition&lt;/li&gt;
-  &lt;li&gt;Performance obligation&lt;/li&gt;
-  &lt;li&gt;Payment obligation&lt;/li&gt;
-  &lt;li&gt;Compliance obligation&lt;/li&gt;
-  &lt;li&gt;Support or warranty obligation&lt;/li&gt;
-  &lt;li&gt;Insurance obligation&lt;/li&gt;
-  &lt;li&gt;Quality obligation&lt;/li&gt;
-  &lt;li&gt;Audit obligation&lt;/li&gt;
-  &lt;li&gt;Contract renewal&lt;/li&gt;
-  &lt;li&gt;Exceptions or exemptions&lt;/li&gt;
-  &lt;li&gt;Indemnification&lt;/li&gt;
-  &lt;li&gt;Jurisdiction&lt;/li&gt;
-  &lt;li&gt;None of the above&lt;/li&gt;
-&lt;/ol&gt;
+<p>As you can see from this map, there are a healthy smattering of buses at different bus stops about equidistant from where I live, at the red x! The good thing about living here is I have plenty of options for the first/last mile of my journey. But give me 20 years of living in a place like this and one big problem starts to loom - which bus stop should I choose? Do I always go to the same bus stop and hopefully minimize my waiting time? Do I try to rifle through my bus app, with only one favourites tab with all the bus stops I care about, including all the buses I don’t care about?</p>
 
-&lt;p&gt;A huge problem with multi-label classification is that it’s difficult to be accurate - if we were to train this classifier in a more traditional way, we would not only need to have a lot of training data - we would need to have a lot of training data &lt;em&gt;for each label&lt;/em&gt;. That can add up very quickly, and isn’t very easy for an independent programmer to do.&lt;/p&gt;
+<p>This became enough of a frustration for me last summer that I set out to code an app with a simple, central function: the <strong>movelist</strong>. Much like Spotify’s or Apple Music’s <em>play</em>list, you can gather the specific buses from different bus stops within the same grouping (eg. “going to work”, “coming home from bus interchange”). This way, you are always only one tap away from seeing all the information you need to make a quick decision about which bus you should take in any given situation!</p>
 
-&lt;p&gt;This is why large language models are so useful for this task - they are essentially an extended version of transfer learning, that is, using embeddings already trained on a massive corpus of the internet, and jumping off of &lt;em&gt;that&lt;/em&gt; as the starting point for any further training. This is a process known as &lt;strong&gt;fine-tuning&lt;/strong&gt;, and it has been really successful at allowing for training on few pieces of training data.&lt;/p&gt;
+<p>Enter… Instabus!</p>
 
-&lt;p&gt;Before we train any further though, let’s see some of the capabilities of large language models - available for free, off the shelf at Hugging Face - at &lt;em&gt;zero-shot classification&lt;/em&gt;. In order to do that, we convert large language model’s key functionality - text to text generation - and use prompt engineering in order to get specific, standardized answers that would be easy to parse within a backend, and thus coerce it into a text classification task. I tested this on Google’s &lt;a href=&quot;https://huggingface.co/google/flan-t5-large&quot;&gt;flan-t5-large&lt;/a&gt;, and was using a GPU for inference:&lt;/p&gt;
+<div align="center">
+    <img src="/assets/instabus_open_busstop.gif" width="300" />
+</div>
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;transformers&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5Tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5ForConditionalGeneration&lt;/span&gt;
+<p>Much like any bus app out there, all the nearest bus stops are sorted by distance for easy access. Click the bus stop icon to reveal the available bus services and their next 3 bus arrival timings, color coded by the level of congestion within the bus (data is pulled from the <a href="https://datamall.lta.gov.sg/content/dam/datamall/datasets/LTA_DataMall_API_User_Guide.pdf">LTA DataMall API</a>).</p>
 
-&lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5Tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_pretrained&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;google/flan-t5-large&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5ForConditionalGeneration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_pretrained&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;google/flan-t5-large&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;cuda&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# With GPU --&amp;gt; .to(&apos;cuda&apos;)
-&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;It is expressly understood that Commerce may unilaterally cancel this Contract for Contractor’s refusal to comply with this provision.&quot;&lt;/span&gt;
+<div align="center">
+    <img src="/assets/instabus_createmovelist.gif" width="300" />
+</div>
 
-&lt;span class=&quot;n&quot;&gt;input_prompt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+<p>To create a movelist, simply press the + button on any bus you’re interested in adding to the movelist - it will bring you to a landing page where you can choose to create a movelist and give it a special name! Conveniently, if you’ve already taken a particular name, it will simply add that bus to that relevant movelist.</p>
+
+<div align="center">
+    <img src="/assets/instabus_addmovelist.gif" width="300" />
+</div>
+
+<p>Adding buses to a movelist is also simple once you have already created movelists!</p>
+
+<div align="center">
+    <img src="/assets/instabus_movelistscreen.gif" width="300" />
+</div>
+
+<p>Once you have all of your buses gathered in all the different movelists you need, looking at all of your buses in one screen is only one tap away! Now you can safely move towards the bus stop that you know will have a bus that comes fastest, as compared to all the other bus stops, without having to flip back and forth between different bus stops or having to sieve those buses across confusingly named bus stops!</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><summary type="html"><![CDATA[Singapore has excellent public transport, but sometimes too much of a good thing can create a few relatively bad options. What do I mean?]]></summary></entry><entry><title type="html">Behind SKIM: LLM-powered Contract AI</title><link href="http://localhost:4000/blog/jekyll/2024/01/14/skim.html" rel="alternate" type="text/html" title="Behind SKIM: LLM-powered Contract AI" /><published>2024-01-14T00:00:00+08:00</published><updated>2024-01-14T00:00:00+08:00</updated><id>http://localhost:4000/blog/jekyll/2024/01/14/skim</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2024/01/14/skim.html"><![CDATA[<p>In this app, I wanted to simplify a key step of the contract review process that many lawyers may have to go through - that is, sifting through the boilerplate in order to establish exactly what obligations are being established between both parties to a contract. You can try it out <a href="https://skim-react.vercel.app">here</a> - if you are using it for the first time, do wait a little bit for the API to warm up; I’m working on a college student’s budget right now ):</p>
+
+<p><img src="/assets/skim-1.gif" alt="The app in a nutshell" />
+<em>Put in any contract text in the text box, or as a word document…</em></p>
+
+<p><img src="/assets/skim-2.gif" alt="filter" />
+<em>Easily filter for the obligation category you are interested in</em></p>
+
+<p>This seems like a task right up the alley of artificial intelligence - especially with the latest advancements in natural language processing in the form of large language models! In order to do that, I needed to first establish the key elements of the app that I was going to code up. It would have to take any length of not-necessarily-well-structured text, and be able to detect obligations, then classify them into a pre-defined set of categories that frequently appear across most contracts. These problems are not easy at all, and if you chunk them into their constitutent steps, each would comprise a significant amount of inference that would not have been possible until recently.</p>
+
+<p>So, in this blog post, I will explain each major step of the app, showing what happens under the hood, and why I made the design/engineering choice that I did. Enjoy!</p>
+
+<h2 id="text-classification-via-large-language-models-the-core-of-this-app">Text classification via large language models: the core of this app</h2>
+
+<p>The core problem of this app was essentially multi-label classification - that is, if I looked at a sentence, I would need to bin it into one of these categories:</p>
+
+<ol>
+  <li>Termination condition</li>
+  <li>Performance obligation</li>
+  <li>Payment obligation</li>
+  <li>Compliance obligation</li>
+  <li>Support or warranty obligation</li>
+  <li>Insurance obligation</li>
+  <li>Quality obligation</li>
+  <li>Audit obligation</li>
+  <li>Contract renewal</li>
+  <li>Exceptions or exemptions</li>
+  <li>Indemnification</li>
+  <li>Jurisdiction</li>
+  <li>None of the above</li>
+</ol>
+
+<p>A huge problem with multi-label classification is that it’s difficult to be accurate - if we were to train this classifier in a more traditional way, we would not only need to have a lot of training data - we would need to have a lot of training data <em>for each label</em>. That can add up very quickly, and isn’t very easy for an independent programmer to do.</p>
+
+<p>This is why large language models are so useful for this task - they are essentially an extended version of transfer learning, that is, using embeddings already trained on a massive corpus of the internet, and jumping off of <em>that</em> as the starting point for any further training. This is a process known as <strong>fine-tuning</strong>, and it has been really successful at allowing for training on few pieces of training data.</p>
+
+<p>Before we train any further though, let’s see some of the capabilities of large language models - available for free, off the shelf at Hugging Face - at <em>zero-shot classification</em>. In order to do that, we convert large language model’s key functionality - text to text generation - and use prompt engineering in order to get specific, standardized answers that would be easy to parse within a backend, and thus coerce it into a text classification task. I tested this on Google’s <a href="https://huggingface.co/google/flan-t5-large">flan-t5-large</a>, and was using a GPU for inference:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">T5Tokenizer</span><span class="p">,</span> <span class="n">T5ForConditionalGeneration</span>
+
+<span class="n">tokenizer</span> <span class="o">=</span> <span class="n">T5Tokenizer</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">google/flan-t5-large</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">T5ForConditionalGeneration</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">google/flan-t5-large</span><span class="sh">"</span><span class="p">).</span><span class="nf">to</span><span class="p">(</span><span class="sh">'</span><span class="s">cuda</span><span class="sh">'</span><span class="p">)</span> <span class="c1"># With GPU --&gt; .to('cuda')
+</span>
+<span class="sh">"</span><span class="s">It is expressly understood that Commerce may unilaterally cancel this Contract for Contractor’s refusal to comply with this provision.</span><span class="sh">"</span>
+
+<span class="n">input_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">"""</span><span class="s">
     Identify the clause type. If it is none, reply None
 
-    Text: &quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clause_text&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;
+    Text: </span><span class="sh">"</span><span class="si">{</span><span class="n">clause_text</span><span class="si">}</span><span class="sh">"</span><span class="s">
 
     Contractual clause types:
     1. Termination condition
@@ -61,65 +104,65 @@
     10. Exceptions or exemptions
     11. Indemnification
     12. Jurisdiction
-    &quot;&quot;&quot;&lt;/span&gt;
+    </span><span class="sh">"""</span>
 
-&lt;span class=&quot;n&quot;&gt;input_ids&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_prompt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;return_tensors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_ids&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cuda&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_ids&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;category&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="n">input_ids</span> <span class="o">=</span> <span class="nf">tokenizer</span><span class="p">(</span><span class="n">input_prompt</span><span class="p">,</span> <span class="n">return_tensors</span><span class="o">=</span><span class="sh">"</span><span class="s">pt</span><span class="sh">"</span><span class="p">).</span><span class="n">input_ids</span><span class="p">.</span><span class="nf">to</span><span class="p">(</span><span class="sh">"</span><span class="s">cuda</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">outputs</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">generate</span><span class="p">(</span><span class="n">input_ids</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
+<span class="n">category</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">.</span><span class="nf">decode</span><span class="p">(</span><span class="n">outputs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div></div>
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;pad&amp;gt; 1. &amp;lt;/s&amp;gt;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nf">print</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+<span class="sh">"</span><span class="s">&lt;pad&gt; 1. &lt;/s&gt;</span><span class="sh">"</span>
+</code></pre></div></div>
 
-&lt;p&gt;Okay, that’s not too bad! It overall does a really great job at making predictions with zero prior information (provided by me) - but after looking at a full contract being processed there were two issues that stood out to me:&lt;/p&gt;
+<p>Okay, that’s not too bad! It overall does a really great job at making predictions with zero prior information (provided by me) - but after looking at a full contract being processed there were two issues that stood out to me:</p>
 
-&lt;p&gt;(1) there are a few clauses which are classified wrongly, and
-(2) the answers are being returned in a format that I think is wrong (I want it to be returned as the text, not numbers)&lt;/p&gt;
+<p>(1) there are a few clauses which are classified wrongly, and
+(2) the answers are being returned in a format that I think is wrong (I want it to be returned as the text, not numbers)</p>
 
-&lt;p&gt;It’s honestly really impressive that we’ve gotten this far without really needing code (well - we needed code to download the model, but up till this point you could really just have used ChatGPT) - but the work awaits! Let’s fine-tune!&lt;/p&gt;
+<p>It’s honestly really impressive that we’ve gotten this far without really needing code (well - we needed code to download the model, but up till this point you could really just have used ChatGPT) - but the work awaits! Let’s fine-tune!</p>
 
-&lt;p&gt;I get the zero-shot classifications and re-classify them by hand (for example, in the text I predicted earlier, I would write “Termination condition” as the desired output), and then I put that back in for fine-tuning:&lt;/p&gt;
+<p>I get the zero-shot classifications and re-classify them by hand (for example, in the text I predicted earlier, I would write “Termination condition” as the desired output), and then I put that back in for fine-tuning:</p>
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;torch&lt;/span&gt;
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="n">torch</span>
 
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datasets&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_metric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DatasetDict&lt;/span&gt;
+<span class="kn">from</span> <span class="n">datasets</span> <span class="kn">import</span> <span class="n">load_dataset</span><span class="p">,</span> <span class="n">load_metric</span><span class="p">,</span> <span class="n">DatasetDict</span>
 
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;transformers&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AutoTokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5Tokenizer&lt;/span&gt;
+<span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">AutoTokenizer</span><span class="p">,</span> <span class="n">T5Tokenizer</span>
 
-&lt;span class=&quot;n&quot;&gt;zs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;csv&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;zeroshot.csv&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;train&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 90% train, 10% test + validation
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_testvalid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# Split the 10% test + valid in half test, half valid
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_valid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_testvalid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;test&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# gather everyone if you want to have a single DatasetDict
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DatasetDict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&apos;train&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_testvalid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;train&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&apos;test&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_valid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;test&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&apos;valid&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_valid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;train&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]})&lt;/span&gt;
+<span class="n">zs</span> <span class="o">=</span> <span class="nf">load_dataset</span><span class="p">(</span><span class="sh">'</span><span class="s">csv</span><span class="sh">'</span><span class="p">,</span> <span class="n">data_files</span><span class="o">=</span><span class="sh">'</span><span class="s">zeroshot.csv</span><span class="sh">'</span><span class="p">,</span> <span class="n">split</span><span class="o">=</span><span class="sh">"</span><span class="s">train</span><span class="sh">"</span><span class="p">)</span>
+<span class="c1"># 90% train, 10% test + validation
+</span><span class="n">train_testvalid</span> <span class="o">=</span> <span class="n">zs</span><span class="p">.</span><span class="nf">train_test_split</span><span class="p">(</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="c1"># Split the 10% test + valid in half test, half valid
+</span><span class="n">test_valid</span> <span class="o">=</span> <span class="n">train_testvalid</span><span class="p">[</span><span class="sh">'</span><span class="s">test</span><span class="sh">'</span><span class="p">].</span><span class="nf">train_test_split</span><span class="p">(</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="c1"># gather everyone if you want to have a single DatasetDict
+</span><span class="n">zs</span> <span class="o">=</span> <span class="nc">DatasetDict</span><span class="p">({</span>
+    <span class="sh">'</span><span class="s">train</span><span class="sh">'</span><span class="p">:</span> <span class="n">train_testvalid</span><span class="p">[</span><span class="sh">'</span><span class="s">train</span><span class="sh">'</span><span class="p">],</span>
+    <span class="sh">'</span><span class="s">test</span><span class="sh">'</span><span class="p">:</span> <span class="n">test_valid</span><span class="p">[</span><span class="sh">'</span><span class="s">test</span><span class="sh">'</span><span class="p">],</span>
+    <span class="sh">'</span><span class="s">valid</span><span class="sh">'</span><span class="p">:</span> <span class="n">test_valid</span><span class="p">[</span><span class="sh">'</span><span class="s">train</span><span class="sh">'</span><span class="p">]})</span>
 
 
 
-&lt;span class=&quot;n&quot;&gt;model_checkpoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;google/flan-t5-large&apos;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5Tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_pretrained&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_checkpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;max_input_length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# change to setting later
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_target_length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# change to setting later
-&lt;/span&gt;
+<span class="n">model_checkpoint</span> <span class="o">=</span> <span class="sh">'</span><span class="s">google/flan-t5-large</span><span class="sh">'</span>
+<span class="n">tokenizer</span> <span class="o">=</span> <span class="n">T5Tokenizer</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="n">model_checkpoint</span><span class="p">)</span>
+<span class="n">max_input_length</span> <span class="o">=</span> <span class="mi">512</span> <span class="c1"># change to setting later
+</span><span class="n">max_target_length</span> <span class="o">=</span> <span class="mi">512</span> <span class="c1"># change to setting later
+</span>
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;preprocess_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;examples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+<span class="k">def</span> <span class="nf">preprocess_data</span><span class="p">(</span><span class="n">examples</span><span class="p">):</span>
 
-  &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+  <span class="n">inputs</span> <span class="o">=</span> <span class="p">[]</span>
 
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clause_text&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;examples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;clause&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+  <span class="k">for</span> <span class="n">clause_text</span> <span class="ow">in</span> <span class="n">examples</span><span class="p">[</span><span class="sh">'</span><span class="s">clause</span><span class="sh">'</span><span class="p">]:</span>
     
-    &lt;span class=&quot;n&quot;&gt;input_prompt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+    <span class="n">input_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">"""</span><span class="s">
         Identify the clause type. If it is none, reply None.
 
-        Text: &quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clause_text&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;
+        Text: </span><span class="sh">"</span><span class="si">{</span><span class="n">clause_text</span><span class="si">}</span><span class="sh">"</span><span class="s">
 
         Contractual clause types:
         1. Termination condition
@@ -134,189 +177,189 @@
         10. Exceptions or exemptions
         11. Indemnification
         12. Jurisdiction
-        &quot;&quot;&quot;&lt;/span&gt;
+        </span><span class="sh">"""</span>
     
-    &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_prompt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    <span class="n">inputs</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">input_prompt</span><span class="p">)</span>
 
-  &lt;span class=&quot;n&quot;&gt;model_inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_input_length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;truncation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  <span class="n">model_inputs</span> <span class="o">=</span> <span class="nf">tokenizer</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="n">max_input_length</span><span class="p">,</span> <span class="n">truncation</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-  &lt;span class=&quot;c1&quot;&gt;# Setup the tokenizer for targets
-&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as_target_tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;examples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;flan_fewshot_cat&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_target_length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-                       &lt;span class=&quot;n&quot;&gt;truncation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  <span class="c1"># Setup the tokenizer for targets
+</span>  <span class="k">with</span> <span class="n">tokenizer</span><span class="p">.</span><span class="nf">as_target_tokenizer</span><span class="p">():</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="nf">tokenizer</span><span class="p">(</span><span class="n">examples</span><span class="p">[</span><span class="sh">"</span><span class="s">flan_fewshot_cat</span><span class="sh">"</span><span class="p">],</span> <span class="n">max_length</span><span class="o">=</span><span class="n">max_target_length</span><span class="p">,</span> 
+                       <span class="n">truncation</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-  &lt;span class=&quot;n&quot;&gt;model_inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;labels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;input_ids&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_inputs&lt;/span&gt;
+  <span class="n">model_inputs</span><span class="p">[</span><span class="sh">"</span><span class="s">labels</span><span class="sh">"</span><span class="p">]</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="sh">"</span><span class="s">input_ids</span><span class="sh">"</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">model_inputs</span>
 
-&lt;span class=&quot;n&quot;&gt;tokenized_datasets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;preprocess_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;batched&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+<span class="n">tokenized_datasets</span> <span class="o">=</span> <span class="n">zs</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="n">preprocess_data</span><span class="p">,</span> <span class="n">batched</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;transformers&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AutoModelForSeq2SeqLM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataCollatorForSeq2Seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Seq2SeqTrainingArguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Seq2SeqTrainer&lt;/span&gt;
+<span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">AutoModelForSeq2SeqLM</span><span class="p">,</span> <span class="n">DataCollatorForSeq2Seq</span><span class="p">,</span> <span class="n">Seq2SeqTrainingArguments</span><span class="p">,</span> <span class="n">Seq2SeqTrainer</span>
 
-&lt;span class=&quot;n&quot;&gt;model_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;flan-t5-large-skim&quot;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model_dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bigdata/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
+<span class="n">model_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">flan-t5-large-skim</span><span class="sh">"</span>
+<span class="n">model_dir</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">"</span><span class="s">bigdata/</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="sh">"</span>
 
-&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Seq2SeqTrainingArguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;model_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;evaluation_strategy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;steps&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;eval_steps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;logging_strategy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;steps&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;logging_steps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;save_strategy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;steps&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;save_steps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;learning_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;4e-5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;per_device_train_batch_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-    &lt;span class=&quot;n&quot;&gt;gradient_accumulation_steps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;weight_decay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;save_total_limit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;num_train_epochs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;predict_with_generate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;fp16&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;load_best_model_at_end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;metric_for_best_model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rouge1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+<span class="n">args</span> <span class="o">=</span> <span class="nc">Seq2SeqTrainingArguments</span><span class="p">(</span>
+    <span class="n">model_dir</span><span class="p">,</span>
+    <span class="n">evaluation_strategy</span><span class="o">=</span><span class="sh">"</span><span class="s">steps</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">eval_steps</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">logging_strategy</span><span class="o">=</span><span class="sh">"</span><span class="s">steps</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">logging_steps</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">save_strategy</span><span class="o">=</span><span class="sh">"</span><span class="s">steps</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">save_steps</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+    <span class="n">learning_rate</span><span class="o">=</span><span class="mf">4e-5</span><span class="p">,</span>
+    <span class="n">per_device_train_batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+    <span class="n">gradient_accumulation_steps</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">weight_decay</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
+    <span class="n">save_total_limit</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">num_train_epochs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">predict_with_generate</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">fp16</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+    <span class="n">load_best_model_at_end</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">metric_for_best_model</span><span class="o">=</span><span class="sh">"</span><span class="s">rouge1</span><span class="sh">"</span><span class="p">,</span>
+<span class="p">)</span>
 
-&lt;span class=&quot;n&quot;&gt;data_collator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataCollatorForSeq2Seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-
-&lt;span class=&quot;c1&quot;&gt;# Function that returns an untrained model to be trained
-&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;transformers&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5Tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5ForConditionalGeneration&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;model_init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T5ForConditionalGeneration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_pretrained&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_checkpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+<span class="n">data_collator</span> <span class="o">=</span> <span class="nc">DataCollatorForSeq2Seq</span><span class="p">(</span><span class="n">tokenizer</span><span class="p">)</span>
 
 
-&lt;span class=&quot;n&quot;&gt;trainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Seq2SeqTrainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;train_dataset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenized_datasets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;train&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;eval_dataset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenized_datasets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;valid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;data_collator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_collator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;trainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In order to save my work, I save it locally, and also push it to the Hugging Face Hub.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;trainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;save_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bigdata/flan-t5-large-skim&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# save model locally
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_to_hub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# push to hugging face hub
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The great thing about pushing it to the Hugging Face Hub is that they have a free inference API that allows you to host the computationally-heavy process on their servers instead of spinning up a server with enough RAM to fit large language models! The only issue is that there are rate limits, and they are not very forthcoming about the explicit limits…&lt;/p&gt;
-
-&lt;h2 id=&quot;text-preprocessing&quot;&gt;Text preprocessing&lt;/h2&gt;
-
-&lt;p&gt;Awesome! Now that we have our language model, surely we are done! Not so fast - a key step in designing apps is to understand the way in which your users will interact with your app. If I were a tired lawyer, I would not want to paste my obligations in one by one to check! That is why I designed my app to handle either long-form text being submitted through a text box, or even just a word document. Let’s take a look at some of the code that begins by parsing a word document:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;c1&quot;&gt;# Extract text from the .docx file
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;doc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docx_stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;clause_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;paragraph&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paragraphs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;clause_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;paragraph&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now, because text can be very unstructured (even if very readable!), I need to take a few text preprocessing steps in order to make sure my model isn’t inferring on garbage: empty strings, accidentally captured metadata, page numbers.&lt;/p&gt;
-
-&lt;p&gt;And before that, an even more important step: if you have noticed, my model presumes that I am sending in a single, complete sentence. That means that paragraphs will have to be broken up into sentences. This presents many problems, since rule-based methods, like splitting on periods, may end up accidentally catching periods within sentences (for example, decimal places/systems).&lt;/p&gt;
-
-&lt;p&gt;To solve this problem, I use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spacy&lt;/code&gt;’s sentence boundary detection, which in turn uses dependency parsing to propagate from roots (eg. subject, object) down through their children (eg. adjectives, adverbs), till the end, which is then determined as a sentence boundary.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;spacy&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;spacy.cli&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;download&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Specify the model name
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;en_core_web_sm&apos;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Check if the model is already installed
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_name&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spacy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_installed_models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# If not installed, download the model
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;download&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;nlp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spacy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;split_into_sentences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nlp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sentence&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sentence&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Let’s see how this sentence boundary detection works with a tricky sentence.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sa&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Contractor shall allow public access to all documents, papers, letters or other materials made or received by Contractor in conjunction with this Contract, unless the records are exempt from section 24(a) of Article I of the State Constitution and section 119.07(1), F.S.  It is expressly understood that Commerce may unilaterally cancel this Contract for Contractor’s refusal to comply with this provision.&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nlp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Contractor shall allow public access to all documents, papers, letters or other materials made or received by Contractor in conjunction with this Contract, unless the records are exempt from section 24(a) of Article I of the State Constitution and section 119.07(1), F.S.  &apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;It is expressly understood that Commerce may unilaterally cancel this Contract for Contractor’s refusal to comply with this provision.&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Great! Another major thing that I do is to strip out accidentally captured metadata, say if “Page 1 of 24” or “Page 2 of 24” or headers/footers accidentally make their way into the word document. In order to do this, I check if pairwise cosine similarities are above a particular threshold:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.feature_extraction.text&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TfidfVectorizer&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.metrics.pairwise&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cosine_distances&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;itertools&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;combinations&lt;/span&gt;
+<span class="c1"># Function that returns an untrained model to be trained
+</span><span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">T5Tokenizer</span><span class="p">,</span> <span class="n">T5ForConditionalGeneration</span>
+<span class="k">def</span> <span class="nf">model_init</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">T5ForConditionalGeneration</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="n">model_checkpoint</span><span class="p">)</span>
 
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;remove_repetitive_strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;similarity_threshold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# Use TF-IDF Vectorizer to embed each line as a vector
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;vectorizer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TfidfVectorizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;vectors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vectorizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit_transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+<span class="n">trainer</span> <span class="o">=</span> <span class="nc">Seq2SeqTrainer</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="nf">model_init</span><span class="p">(),</span>
+    <span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">,</span>
+    <span class="n">train_dataset</span><span class="o">=</span><span class="n">tokenized_datasets</span><span class="p">[</span><span class="sh">"</span><span class="s">train</span><span class="sh">"</span><span class="p">],</span>
+    <span class="n">eval_dataset</span><span class="o">=</span><span class="n">tokenized_datasets</span><span class="p">[</span><span class="sh">"</span><span class="s">valid</span><span class="sh">"</span><span class="p">],</span>
+    <span class="n">data_collator</span><span class="o">=</span><span class="n">data_collator</span><span class="p">,</span>
+    <span class="n">tokenizer</span><span class="o">=</span><span class="n">tokenizer</span><span class="p">,</span>
+<span class="p">)</span>
 
-    &lt;span class=&quot;c1&quot;&gt;# Calculate pairwise cosine distances
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;distances&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cosine_distances&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vectors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+<span class="n">trainer</span><span class="p">.</span><span class="nf">train</span><span class="p">()</span>
+</code></pre></div></div>
 
-    &lt;span class=&quot;c1&quot;&gt;# Identify pairs with similarity below the threshold
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;filtered_pairs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;combinations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distances&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;similarity_threshold&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+<p>In order to save my work, I save it locally, and also push it to the Hugging Face Hub.</p>
 
-    &lt;span class=&quot;c1&quot;&gt;# Create a set of strings to keep track of unique strings
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;unique_strings&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">trainer</span><span class="p">.</span><span class="nf">save_model</span><span class="p">(</span><span class="sh">"</span><span class="s">bigdata/flan-t5-large-skim</span><span class="sh">"</span><span class="p">)</span> <span class="c1"># save model locally
+</span><span class="n">trainer</span><span class="p">.</span><span class="nf">push_to_hub</span><span class="p">()</span> <span class="c1"># push to hugging face hub
+</span></code></pre></div></div>
 
-    &lt;span class=&quot;c1&quot;&gt;# Add strings from filtered pairs to unique_strings
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string2&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filtered_pairs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;unique_strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;unique_strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+<p>The great thing about pushing it to the Hugging Face Hub is that they have a free inference API that allows you to host the computationally-heavy process on their servers instead of spinning up a server with enough RAM to fit large language models! The only issue is that there are rate limits, and they are not very forthcoming about the explicit limits…</p>
 
-    &lt;span class=&quot;c1&quot;&gt;# Filter the original list based on unique strings
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;filtered_strings&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strings&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unique_strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+<h2 id="text-preprocessing">Text preprocessing</h2>
 
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filtered_strings&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<p>Awesome! Now that we have our language model, surely we are done! Not so fast - a key step in designing apps is to understand the way in which your users will interact with your app. If I were a tired lawyer, I would not want to paste my obligations in one by one to check! That is why I designed my app to handle either long-form text being submitted through a text box, or even just a word document. Let’s take a look at some of the code that begins by parsing a word document:</p>
 
-&lt;p&gt;There are some other basic things that I do, like stripping whitespaces or removing strings that don’t have any alphabetical content.&lt;/p&gt;
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># Extract text from the .docx file
+</span><span class="n">doc</span> <span class="o">=</span> <span class="nc">Document</span><span class="p">(</span><span class="n">docx_stream</span><span class="p">)</span>
+<span class="n">clause_text</span> <span class="o">=</span> <span class="sh">""</span>
 
-&lt;h2 id=&quot;front-end-to-back-end-an-overall-structure&quot;&gt;Front-end to back-end: an overall structure&lt;/h2&gt;
+<span class="k">for</span> <span class="n">paragraph</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">.</span><span class="n">paragraphs</span><span class="p">:</span>
+    <span class="n">clause_text</span> <span class="o">+=</span> <span class="n">paragraph</span><span class="p">.</span><span class="n">text</span> <span class="o">+</span> <span class="sh">"</span><span class="se">\n</span><span class="sh">"</span>
+</code></pre></div></div>
 
-&lt;p&gt;The overall structure of the app is as follows: I run one instance of a ReactJS front-end on Vercel, and another instance of a Flask back-end on Azure. The Flask back-end handles all the text pre-processing and inference, whereas the ReactJS front-end passes text entered by the user on the web through a POST request towards the back-end, and receives the text.&lt;/p&gt;
+<p>Now, because text can be very unstructured (even if very readable!), I need to take a few text preprocessing steps in order to make sure my model isn’t inferring on garbage: empty strings, accidentally captured metadata, page numbers.</p>
 
-&lt;p&gt;There are many little details in the React app - like hovering over a clause text also highlights all other clause texts in the same category, and hovering over the category text at the top also highlights clause texts in that category, as well as other features like dynamically re-sizing text boxes. But there was one feature that was an interesting problem took a while to handle, and that was streaming.&lt;/p&gt;
+<p>And before that, an even more important step: if you have noticed, my model presumes that I am sending in a single, complete sentence. That means that paragraphs will have to be broken up into sentences. This presents many problems, since rule-based methods, like splitting on periods, may end up accidentally catching periods within sentences (for example, decimal places/systems).</p>
 
-&lt;p&gt;You see, even the best large language models like ChatGPT take a while to complete inference. From the user’s standpoint, the total time of inference might be unacceptable, but they might be more willing to accept small chunks of the text being additively processed.&lt;/p&gt;
+<p>To solve this problem, I use <code class="language-plaintext highlighter-rouge">spacy</code>’s sentence boundary detection, which in turn uses dependency parsing to propagate from roots (eg. subject, object) down through their children (eg. adjectives, adverbs), till the end, which is then determined as a sentence boundary.</p>
 
-&lt;p&gt;Therefore, in my use case, instead of waiting for the whole list of texts to be processed, I stream information back from the Flask app at every step of the loop using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yield&lt;/code&gt;, and React is capable of processing this data while &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;await&lt;/code&gt;ing the final set of data:&lt;/p&gt;
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">spacy</span>
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Flask side:
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;/api/generate_clause&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;POST&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generate_clause&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+<span class="kn">from</span> <span class="n">spacy.cli</span> <span class="kn">import</span> <span class="n">download</span>
 
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;progress&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;clause_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;text&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+<span class="c1"># Specify the model name
+</span><span class="n">model_name</span> <span class="o">=</span> <span class="sh">'</span><span class="s">en_core_web_sm</span><span class="sh">'</span>
 
-        &lt;span class=&quot;n&quot;&gt;lotexts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;splitter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clause_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# splits text according to preprocessing rules
-&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+<span class="c1"># Check if the model is already installed
+</span><span class="k">if</span> <span class="n">model_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">spacy</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="nf">get_installed_models</span><span class="p">():</span>
+    <span class="c1"># If not installed, download the model
+</span>    <span class="nf">download</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+
+<span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">split_into_sentences</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">sentences</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">).</span><span class="n">sents</span><span class="p">)</span>
+    <span class="n">sentences</span> <span class="o">=</span> <span class="p">[</span><span class="n">sentence</span><span class="p">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">sentences</span>
+</code></pre></div></div>
+
+<p>Let’s see how this sentence boundary detection works with a tricky sentence.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="sa">r</span><span class="sh">"</span><span class="s">Contractor shall allow public access to all documents, papers, letters or other materials made or received by Contractor in conjunction with this Contract, unless the records are exempt from section 24(a) of Article I of the State Constitution and section 119.07(1), F.S.  It is expressly understood that Commerce may unilaterally cancel this Contract for Contractor’s refusal to comply with this provision.</span><span class="sh">"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">text</span><span class="p">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="nf">list</span><span class="p">(</span><span class="nf">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">).</span><span class="n">sents</span><span class="p">)]</span>
+
+<span class="p">[</span><span class="sh">'</span><span class="s">Contractor shall allow public access to all documents, papers, letters or other materials made or received by Contractor in conjunction with this Contract, unless the records are exempt from section 24(a) of Article I of the State Constitution and section 119.07(1), F.S.  </span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">It is expressly understood that Commerce may unilaterally cancel this Contract for Contractor’s refusal to comply with this provision.</span><span class="sh">'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Great! Another major thing that I do is to strip out accidentally captured metadata, say if “Page 1 of 24” or “Page 2 of 24” or headers/footers accidentally make their way into the word document. In order to do this, I check if pairwise cosine similarities are above a particular threshold:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span> <span class="n">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">cosine_distances</span>
+<span class="kn">from</span> <span class="n">itertools</span> <span class="kn">import</span> <span class="n">combinations</span>
+
+
+<span class="k">def</span> <span class="nf">remove_repetitive_strings</span><span class="p">(</span><span class="n">strings</span><span class="p">,</span> <span class="n">similarity_threshold</span><span class="o">=</span><span class="mi">80</span><span class="p">):</span>
+    <span class="c1"># Use TF-IDF Vectorizer to embed each line as a vector
+</span>    <span class="n">vectorizer</span> <span class="o">=</span> <span class="nc">TfidfVectorizer</span><span class="p">()</span>
+    <span class="n">vectors</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="p">.</span><span class="nf">fit_transform</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span>
+
+    <span class="c1"># Calculate pairwise cosine distances
+</span>    <span class="n">distances</span> <span class="o">=</span> <span class="nf">cosine_distances</span><span class="p">(</span><span class="n">vectors</span><span class="p">)</span>
+
+    <span class="c1"># Identify pairs with similarity below the threshold
+</span>    <span class="n">filtered_pairs</span> <span class="o">=</span> <span class="p">[(</span><span class="n">strings</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">strings</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">combinations</span><span class="p">(</span><span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">strings</span><span class="p">)),</span> <span class="mi">2</span><span class="p">)</span>
+                      <span class="k">if</span> <span class="n">distances</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">similarity_threshold</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)]</span>
+
+    <span class="c1"># Create a set of strings to keep track of unique strings
+</span>    <span class="n">unique_strings</span> <span class="o">=</span> <span class="nf">set</span><span class="p">()</span>
+
+    <span class="c1"># Add strings from filtered pairs to unique_strings
+</span>    <span class="k">for</span> <span class="n">string1</span><span class="p">,</span> <span class="n">string2</span> <span class="ow">in</span> <span class="n">filtered_pairs</span><span class="p">:</span>
+        <span class="n">unique_strings</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">string1</span><span class="p">)</span>
+        <span class="n">unique_strings</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">string2</span><span class="p">)</span>
+
+    <span class="c1"># Filter the original list based on unique strings
+</span>    <span class="n">filtered_strings</span> <span class="o">=</span> <span class="p">[</span><span class="n">string</span> <span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">strings</span> <span class="k">if</span> <span class="n">string</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">unique_strings</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">filtered_strings</span>
+</code></pre></div></div>
+
+<p>There are some other basic things that I do, like stripping whitespaces or removing strings that don’t have any alphabetical content.</p>
+
+<h2 id="front-end-to-back-end-an-overall-structure">Front-end to back-end: an overall structure</h2>
+
+<p>The overall structure of the app is as follows: I run one instance of a ReactJS front-end on Vercel, and another instance of a Flask back-end on Azure. The Flask back-end handles all the text pre-processing and inference, whereas the ReactJS front-end passes text entered by the user on the web through a POST request towards the back-end, and receives the text.</p>
+
+<p>There are many little details in the React app - like hovering over a clause text also highlights all other clause texts in the same category, and hovering over the category text at the top also highlights clause texts in that category, as well as other features like dynamically re-sizing text boxes. But there was one feature that was an interesting problem took a while to handle, and that was streaming.</p>
+
+<p>You see, even the best large language models like ChatGPT take a while to complete inference. From the user’s standpoint, the total time of inference might be unacceptable, but they might be more willing to accept small chunks of the text being additively processed.</p>
+
+<p>Therefore, in my use case, instead of waiting for the whole list of texts to be processed, I stream information back from the Flask app at every step of the loop using <code class="language-plaintext highlighter-rouge">yield</code>, and React is capable of processing this data while <code class="language-plaintext highlighter-rouge">await</code>ing the final set of data:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Flask side:
+</span><span class="nd">@app.route</span><span class="p">(</span><span class="sh">'</span><span class="s">/api/generate_clause</span><span class="sh">'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">POST</span><span class="sh">'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">generate_clause</span><span class="p">():</span>
+
+    <span class="k">def</span> <span class="nf">generate</span><span class="p">():</span>
+        <span class="n">progress</span><span class="o">=</span><span class="mi">0</span>
+        <span class="n">clause_text</span> <span class="o">=</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span><span class="p">[</span><span class="sh">'</span><span class="s">text</span><span class="sh">'</span><span class="p">]</span>
+
+        <span class="n">lotexts</span> <span class="o">=</span> <span class="nf">splitter</span><span class="p">(</span><span class="n">clause_text</span><span class="p">)</span> <span class="c1"># splits text according to preprocessing rules
+</span>
+        <span class="sh">"""</span><span class="s">
         Takes in a list of texts (lotexts) that has already been processed. could be a word doc file or just simple text, either way, they just need to be in an orderly list of texts.
-        &quot;&quot;&quot;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;lodict&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lotexts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;progress&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lotexts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        </span><span class="sh">"""</span>
+        <span class="n">lodict</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">text</span> <span class="ow">in</span> <span class="nf">enumerate</span><span class="p">(</span><span class="n">lotexts</span><span class="p">):</span>
+            <span class="n">progress</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="nf">len</span><span class="p">(</span><span class="n">lotexts</span><span class="p">)</span>
 
-            &lt;span class=&quot;n&quot;&gt;input_prompt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+            <span class="n">input_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">"""</span><span class="s">
             Identify the clause type. If it is none, reply None
 
-            Text: &quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;
+            Text: </span><span class="sh">"</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="sh">"</span><span class="s">
 
             Contractual clause types:
             1. Termination condition
@@ -331,98 +374,94 @@
             10. Exceptions or exemptions
             11. Indemnification
             12. Jurisdiction
-            &quot;&quot;&quot;&lt;/span&gt;
+            </span><span class="sh">"""</span>
 
-            &lt;span class=&quot;c1&quot;&gt;# error handling for model initialization
-&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;query&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-                &lt;span class=&quot;s&quot;&gt;&quot;inputs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input_prompt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;wait_for_model&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+            <span class="c1"># error handling for model initialization
+</span>            <span class="n">output</span> <span class="o">=</span> <span class="nf">query</span><span class="p">({</span>
+                <span class="sh">"</span><span class="s">inputs</span><span class="sh">"</span><span class="p">:</span> <span class="n">input_prompt</span><span class="p">,</span> <span class="sh">"</span><span class="s">wait_for_model</span><span class="sh">"</span><span class="p">:</span> <span class="bp">True</span>
+            <span class="p">})</span>
 
-            &lt;span class=&quot;n&quot;&gt;category&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;generated_text&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            <span class="n">category</span> <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="sh">'</span><span class="s">generated_text</span><span class="sh">'</span><span class="p">]</span>
 
-            &lt;span class=&quot;n&quot;&gt;lodict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+            <span class="n">lodict</span><span class="p">.</span><span class="nf">update</span><span class="p">({</span><span class="n">text</span><span class="p">:</span> <span class="n">category</span><span class="p">})</span>
 
-            &lt;span class=&quot;n&quot;&gt;json_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;text_block&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clause_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;lookup&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lodict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;progress&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;progress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;json_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            <span class="n">json_data</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">text_block</span><span class="sh">'</span><span class="p">:</span> <span class="n">clause_text</span><span class="p">,</span> <span class="sh">'</span><span class="s">lookup</span><span class="sh">'</span><span class="p">:</span> <span class="n">lodict</span><span class="p">,</span> <span class="sh">'</span><span class="s">progress</span><span class="sh">'</span><span class="p">:</span> <span class="n">progress</span><span class="p">}</span>
+            <span class="n">json_string</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="nf">dumps</span><span class="p">(</span><span class="n">json_data</span><span class="p">)</span>
 
-            &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json_string&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Add a special object to separate JSON streamed objects
-&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# Use Response and stream_with_context to handle streaming
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stream_with_context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()),&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;content_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;text/event-stream&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+            <span class="k">yield</span> <span class="n">json_string</span>  <span class="c1"># Add a special object to separate JSON streamed objects
+</span>
+    <span class="c1"># Use Response and stream_with_context to handle streaming
+</span>    <span class="k">return</span> <span class="nc">Response</span><span class="p">(</span><span class="nf">stream_with_context</span><span class="p">(</span><span class="nf">generate</span><span class="p">()),</span>
+                    <span class="n">content_type</span><span class="o">=</span><span class="sh">'</span><span class="s">text/event-stream</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;side&lt;/span&gt;
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="err">#</span> <span class="nx">React</span> <span class="nx">side</span>
 
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setOutputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//text just gives the raw block text to be displayed&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outputData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setOutputData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({})&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;progress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setProgress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+<span class="kd">const</span> <span class="p">[</span><span class="nx">outputText</span><span class="p">,</span> <span class="nx">setOutputText</span><span class="p">]</span> <span class="o">=</span> <span class="nf">useState</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span> <span class="c1">//text just gives the raw block text to be displayed</span>
+<span class="kd">const</span> <span class="p">[</span><span class="nx">outputData</span><span class="p">,</span> <span class="nx">setOutputData</span><span class="p">]</span> <span class="o">=</span> <span class="nf">useState</span><span class="p">({})</span>
+<span class="kd">const</span> <span class="p">[</span><span class="nx">progress</span><span class="p">,</span> <span class="nx">setProgress</span><span class="p">]</span> <span class="o">=</span> <span class="nf">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;handleGenerateClick&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;http://localhost:5000/api/generate_clause&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tmpPromptResponse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;POST&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Content-Type&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;application/json&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+<span class="kd">const</span> <span class="nx">handleGenerateClick</span> <span class="o">=</span> <span class="k">async </span><span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://localhost:5000/api/generate_clause</span><span class="dl">'</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">tmpPromptResponse</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="kd">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="k">await</span> <span class="nf">fetch</span><span class="p">(</span><span class="nx">url</span> <span class="p">,</span> <span class="p">{</span>
+        <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">POST</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+          <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span>
+        <span class="p">},</span>
+        <span class="na">body</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nf">stringify</span><span class="p">({</span>
+          <span class="na">text</span><span class="p">:</span> <span class="nx">inputText</span><span class="p">,</span>
+        <span class="p">}),</span>
+      <span class="p">});</span>
       
-      &lt;span class=&quot;c1&quot;&gt;// eslint-disable-next-line no-undef&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;decoder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;TextDecoderStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipeThrough&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;decoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getReader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      <span class="c1">// eslint-disable-next-line no-undef</span>
+      <span class="kd">let</span> <span class="nx">decoder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TextDecoderStream</span><span class="p">();</span>
+      <span class="k">if </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">body</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+      <span class="kd">const</span> <span class="nx">reader</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">body</span>
+        <span class="p">.</span><span class="nf">pipeThrough</span><span class="p">(</span><span class="nx">decoder</span><span class="p">)</span>
+        <span class="p">.</span><span class="nf">getReader</span><span class="p">();</span>
       
-      &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      <span class="k">while </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="p">{</span><span class="nx">value</span><span class="p">,</span> <span class="nx">done</span><span class="p">}</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">reader</span><span class="p">.</span><span class="nf">read</span><span class="p">();</span>
         
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;tmpPromptResponse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;setOutputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tmpPromptResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text_block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;setOutputData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tmpPromptResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lookup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;setProgress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tmpPromptResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;progress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        <span class="k">if </span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+          <span class="nx">tmpPromptResponse</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+          <span class="nf">setOutputText</span><span class="p">(</span><span class="nx">tmpPromptResponse</span><span class="p">.</span><span class="nx">text_block</span><span class="p">);</span>
+          <span class="nf">setOutputData</span><span class="p">(</span><span class="nx">tmpPromptResponse</span><span class="p">.</span><span class="nx">lookup</span><span class="p">);</span>
+          <span class="nf">setProgress</span><span class="p">(</span><span class="nx">tmpPromptResponse</span><span class="p">.</span><span class="nx">progress</span><span class="p">);</span>
 
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">catch </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+    <span class="p">}</span>
 
-  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+  <span class="p">};</span>
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;h2 id=&quot;a-final-word&quot;&gt;A final word&lt;/h2&gt;
+<h2 id="a-final-word">A final word</h2>
 
-&lt;p&gt;That brings me to the end of this blog! I think it was a pretty good experience handling everything from conceptualization, down to specifying a language model, testing and finetuning it, before setting it up on a Flask back-end server, and then designing a very preliminary user experience on a React front-end, and finally considering how all the moving pieces would fit together within a production context with compute power constraints (well, in my case, &lt;em&gt;severe&lt;/em&gt; constraints).&lt;/p&gt;
+<p>That brings me to the end of this blog! I think it was a pretty good experience handling everything from conceptualization, down to specifying a language model, testing and finetuning it, before setting it up on a Flask back-end server, and then designing a very preliminary user experience on a React front-end, and finally considering how all the moving pieces would fit together within a production context with compute power constraints (well, in my case, <em>severe</em> constraints).</p>
 
-&lt;p&gt;A lot of what I could do on my GPU-enabled development run was rendered moot because of production constraints: for example, without using Hugging Face’s inference API, I could categorize documents a lot faster and without any limits. But we all must accept and work within the constraints provided, and this project was very instructive in the details of the full production process of an AI project.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="jekyll" /><summary type="html">In this app, I wanted to simplify a key step of the contract review process that many lawyers may have to go through - that is, sifting through the boilerplate in order to establish exactly what obligations are being established between both parties to a contract. You can try it out here - if you are using it for the first time, do wait a little bit for the API to warm up; I’m working on a college student’s budget right now ):</summary></entry><entry><title type="html">Behind DELIVERY: a vehicle routing problem</title><link href="http://localhost:4000/blog/jekyll/2022/01/12/robots.html" rel="alternate" type="text/html" title="Behind DELIVERY: a vehicle routing problem" /><published>2022-01-12T08:00:00-08:00</published><updated>2022-01-12T08:00:00-08:00</updated><id>http://localhost:4000/blog/jekyll/2022/01/12/robots</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2022/01/12/robots.html">&lt;p&gt;In this app, I implement the savings algorithm first proposed by Clarke and Wright in the context of a delivery vehicle routing problem within a multi-level estate. You can randomly generate some number of customers who have each have a uniform requested delivery load. Importantly, customers occupy units, and units are connected to each other either by other units, or by nodes which do not have any occupancy. Floors are connected to each other by lifts, and lift edges are calibrated to a particular distance per floor. There is a single depot where deliveries are made from - this is the underground logistics hub. You can choose how many vehicles are at your disposal - interestly, the algorithm is sometimes able to find savings (that is, the total distance traveled across all robots is reduced) by reducing the number of vehicles, which makes sense especially if there are only few deliveries to be made, or if all the deliveries are clustered at one side of the estate. You can, however, insist that all vehicles be used. The objective in this problem is purely about total distance traveled by the robots in total, so there is no consideration of wait time experienced by customers. Once demand is generated, use the savings algorithm as a heuristic to find a good (but not necessarily optimal) allocation of vehicle routes for the deliveries to be made.&lt;/p&gt;
+<p>A lot of what I could do on my GPU-enabled development run was rendered moot because of production constraints: for example, without using Hugging Face’s inference API, I could categorize documents a lot faster and without any limits. But we all must accept and work within the constraints provided, and this project was very instructive in the details of the full production process of an AI project.</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><summary type="html"><![CDATA[In this app, I wanted to simplify a key step of the contract review process that many lawyers may have to go through - that is, sifting through the boilerplate in order to establish exactly what obligations are being established between both parties to a contract. You can try it out here - if you are using it for the first time, do wait a little bit for the API to warm up; I’m working on a college student’s budget right now ):]]></summary></entry><entry><title type="html">Optimal control, trajectory optimization, and getting a rocket to space</title><link href="http://localhost:4000/blog/jekyll/2024/01/12/rockets.html" rel="alternate" type="text/html" title="Optimal control, trajectory optimization, and getting a rocket to space" /><published>2024-01-12T00:00:00+08:00</published><updated>2024-01-12T00:00:00+08:00</updated><id>http://localhost:4000/blog/jekyll/2024/01/12/rockets</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2024/01/12/rockets.html"><![CDATA[<p>Let’s say we wanted to get a rocket to orbit - based on experience (or, if you’ve made it through the Kerbal Space Program tutorial like me), you would roughly know that, with the rocket starting at an upward attitude with respect to the center of the Earth, you would want it to gradually tilt over to become increasingly parallel to the surface of the Earth. But what if we wanted to optimize some part of this flight process - let’s say, to make sure that we have as much fuel mass left as possible at the end of the journey? Well, the next thing we’d think about it, what are the factors of the flight that we can control, and how do these controls, on a physical basis, affect the state of the rocket (eg. the position of the rocket, the velocity of the rocket, the mass of the rocket)?</p>
 
-&lt;p&gt;Try it &lt;a href=&quot;https://pdd-vrp.streamlit.app/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+<p>The simplest reducible example that we can think of is a car at rest at a starting position, which we want to get to a final position, also at rest. We specify an objective - for example, that we want it to reach its final position in the shortest possible time - and then ask what series of controls (applied forces) would optimize that objective. Intuitively, we would say - apply the maximum amount of force possible to get it to accelerate, before the applying the maximum amount of force possible in the opposite direction to get it to decelerate - and indeed, <a href="https://en.wikipedia.org/wiki/Bang%E2%80%93bang_control">bang-bang solutions</a> are an optimal control.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/robots.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="jekyll" /><summary type="html">In this app, I implement the savings algorithm first proposed by Clarke and Wright in the context of a delivery vehicle routing problem within a multi-level estate. You can randomly generate some number of customers who have each have a uniform requested delivery load. Importantly, customers occupy units, and units are connected to each other either by other units, or by nodes which do not have any occupancy. Floors are connected to each other by lifts, and lift edges are calibrated to a particular distance per floor. There is a single depot where deliveries are made from - this is the underground logistics hub. You can choose how many vehicles are at your disposal - interestly, the algorithm is sometimes able to find savings (that is, the total distance traveled across all robots is reduced) by reducing the number of vehicles, which makes sense especially if there are only few deliveries to be made, or if all the deliveries are clustered at one side of the estate. You can, however, insist that all vehicles be used. The objective in this problem is purely about total distance traveled by the robots in total, so there is no consideration of wait time experienced by customers. Once demand is generated, use the savings algorithm as a heuristic to find a good (but not necessarily optimal) allocation of vehicle routes for the deliveries to be made.</summary></entry><entry><title type="html">Behind ORBIT: an optimal control problem</title><link href="http://localhost:4000/blog/jekyll/2022/01/11/rockets.html" rel="alternate" type="text/html" title="Behind ORBIT: an optimal control problem" /><published>2022-01-11T08:00:00-08:00</published><updated>2022-01-11T08:00:00-08:00</updated><id>http://localhost:4000/blog/jekyll/2022/01/11/rockets</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2022/01/11/rockets.html">&lt;p&gt;Let’s say we wanted to get a rocket to orbit - based on experience (or, if you’ve made it through the Kerbal Space Program tutorial like me), you would roughly know that, with the rocket starting at an upward attitude with respect to the center of the Earth, you would want it to gradually tilt over to become increasingly parallel to the surface of the Earth. But what if we wanted to optimize some part of this flight process - let’s say, to make sure that we have as much fuel mass left as possible at the end of the journey? Well, the next thing we’d think about it, what are the factors of the flight that we can control, and how do these controls, on a physical basis, affect the state of the rocket (eg. the position of the rocket, the velocity of the rocket, the mass of the rocket)?&lt;/p&gt;
+<p>There are a few special cases where analytical solutions can be found, but most don’t. This brings us to the field of numerical methods to approximate optimal control solutions - one of which is known as trajectory optimization!</p>
 
-&lt;p&gt;The simplest reducible example that we can think of is a car at rest at a starting position, which we want to get to a final position, also at rest. We specify an objective - for example, that we want it to reach its final position in the shortest possible time - and then ask what series of controls (applied forces) would optimize that objective. Intuitively, we would say - apply the maximum amount of force possible to get it to accelerate, before the applying the maximum amount of force possible in the opposite direction to get it to decelerate - and indeed, &lt;a href=&quot;https://en.wikipedia.org/wiki/Bang%E2%80%93bang_control&quot;&gt;bang-bang solutions&lt;/a&gt; are an optimal control.&lt;/p&gt;
+<p>In this app, I display the optimal control trajectory, given a starting position and final desired orbital parameters, using an algorithm known as trajectory optimization. You can try it <a href="https://rocket-optimal-control.streamlit.app/">here</a>.</p>
 
-&lt;p&gt;There are a few special cases where analytical solutions can be found, but most don’t. This brings us to the field of numerical methods to approximate optimal control solutions - one of which is known as trajectory optimization!&lt;/p&gt;
+<p><img src="/assets/rocket.gif" alt="The app in a nutshell" /></p>
 
-&lt;p&gt;In this app, I display the optimal control trajectory, given a starting position and final desired orbital parameters, using an algorithm known as trajectory optimization. You can try it &lt;a href=&quot;https://rocket-optimal-control.streamlit.app/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+<h2 id="mathy-stuff-if-you-like-it">Mathy stuff if you like it</h2>
 
-&lt;p&gt;&lt;img src=&quot;/assets/rocket.gif&quot; alt=&quot;The app in a nutshell&quot; /&gt;&lt;/p&gt;
+<p>In this section, I outline the optimal control problem specifically:</p>
 
-&lt;h2 id=&quot;mathy-stuff-if-you-like-it&quot;&gt;Mathy stuff if you like it&lt;/h2&gt;
-
-&lt;p&gt;In this section, I outline the optimal control problem specifically:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/optimalcontrol-1.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/optimalcontrol-2.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/optimalcontrol-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="jekyll" /><summary type="html">Let’s say we wanted to get a rocket to orbit - based on experience (or, if you’ve made it through the Kerbal Space Program tutorial like me), you would roughly know that, with the rocket starting at an upward attitude with respect to the center of the Earth, you would want it to gradually tilt over to become increasingly parallel to the surface of the Earth. But what if we wanted to optimize some part of this flight process - let’s say, to make sure that we have as much fuel mass left as possible at the end of the journey? Well, the next thing we’d think about it, what are the factors of the flight that we can control, and how do these controls, on a physical basis, affect the state of the rocket (eg. the position of the rocket, the velocity of the rocket, the mass of the rocket)?</summary></entry></feed>
+<p><img src="/assets/optimalcontrol-1.png" alt="" />
+<img src="/assets/optimalcontrol-2.png" alt="" />
+<img src="/assets/optimalcontrol-3.png" alt="" /></p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><summary type="html"><![CDATA[Let’s say we wanted to get a rocket to orbit - based on experience (or, if you’ve made it through the Kerbal Space Program tutorial like me), you would roughly know that, with the rocket starting at an upward attitude with respect to the center of the Earth, you would want it to gradually tilt over to become increasingly parallel to the surface of the Earth. But what if we wanted to optimize some part of this flight process - let’s say, to make sure that we have as much fuel mass left as possible at the end of the journey? Well, the next thing we’d think about it, what are the factors of the flight that we can control, and how do these controls, on a physical basis, affect the state of the rocket (eg. the position of the rocket, the velocity of the rocket, the mass of the rocket)?]]></summary></entry></feed>
