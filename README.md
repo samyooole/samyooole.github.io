@@ -1,1 +1,3 @@
-To run locally, run `bundle exec jekyll serve` in the terminal
+## samyooole
+
+Welcome to my personal website!
