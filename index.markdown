@@ -12,7 +12,14 @@ title: Home
   <ul>
   {% assign date = currentdate %}
   {% endif %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="post-tags" > <!--- float right makes it justify to the right  style="float: right;"-->
+      [{% for tag in post.tags %}
+        <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
+      {% endfor %}]
+    </span>
+  </li>
   {% endfor %}
   </ul>
 </div>
