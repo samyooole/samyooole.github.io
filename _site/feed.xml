@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-19T13:11:24-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Samuel Ho</title><subtitle>Building bespoke tech solutions for the public good 🌱</subtitle><entry><title type="html">A simple virtual reality 3D design tool made with Unity/C#</title><link href="http://localhost:4000/blog/jekyll/2025/01/10/vr.html" rel="alternate" type="text/html" title="A simple virtual reality 3D design tool made with Unity/C#" /><published>2025-01-10T20:00:00-05:00</published><updated>2025-01-10T20:00:00-05:00</updated><id>http://localhost:4000/blog/jekyll/2025/01/10/vr</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2025/01/10/vr.html"><![CDATA[<p>I recently completed <a href="https://test-classes.ssit.cucloud.net/browse/roster/FA24/class/INFO/5340">INFO 5340</a>, “Virtual and Augmented Reality”, at Cornell Tech. It was a pretty intense course which was very much focused on constant building week after week - in particular, in the 3D/game development context, with a particular focus on virtual reality. For our final group project, we were tasked with emulating features from a virtual headset 3D design tool, <a href="https://gravitysketch.com">Gravity Sketch</a>. While previous assignments had broken down our tasks into bite-sized pieces, the final project was assigned as-is: watch a video showing how a particular function is supposed to work, and replicate it any way you wish, making sure to respect fidelity to the original product + efficiency. This made the final project especially challenging, as we had to switch hats between product managing (how many features can we implement? what should we do first? who should take which function? is this feature of good quality? are there imperfections or lag? how would a real customer feel using this product?) as well as software engineering (how to efficiently/correctly implement a function? how to structure / refactor code properly? how to handle merge conflicts between different features worked on by different swes? how to catch and squash bugs?).</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-19T16:32:21-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Samuel Ho</title><subtitle>Building bespoke tech solutions for the public good 🌱</subtitle><entry><title type="html">A simple virtual reality 3D design tool made with Unity/C#</title><link href="http://localhost:4000/blog/jekyll/2025/01/10/vr.html" rel="alternate" type="text/html" title="A simple virtual reality 3D design tool made with Unity/C#" /><published>2025-01-10T20:00:00-05:00</published><updated>2025-01-10T20:00:00-05:00</updated><id>http://localhost:4000/blog/jekyll/2025/01/10/vr</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2025/01/10/vr.html"><![CDATA[<p>I recently completed <a href="https://test-classes.ssit.cucloud.net/browse/roster/FA24/class/INFO/5340">INFO 5340</a>, “Virtual and Augmented Reality”, at Cornell Tech. It was a pretty intense course which was very much focused on constant building week after week - in particular, in the 3D/game development context, with a particular focus on virtual reality. For our final group project, we were tasked with emulating features from a virtual headset 3D design tool, <a href="https://gravitysketch.com">Gravity Sketch</a>. While previous assignments had broken down our tasks into bite-sized pieces, the final project was assigned as-is: watch a video showing how a particular function is supposed to work, and replicate it any way you wish, making sure to respect fidelity to the original product + efficiency. This made the final project especially challenging, as we had to switch hats between product managing (how many features can we implement? what should we do first? who should take which function? is this feature of good quality? are there imperfections or lag? how would a real customer feel using this product?) as well as software engineering (how to efficiently/correctly implement a function? how to structure / refactor code properly? how to handle merge conflicts between different features worked on by different swes? how to catch and squash bugs?).</p>
 
 <p>We were almost completely on our own, and I think this was what made it an especially rewarding experience, since we ultimately developed a pretty good intuition for vector graphics + state management and got pretty good practice in writing C# day in, day out.</p>
 
@@ -60,7 +60,7 @@
 
 <h2 id="3-having-a-balanced-holistic-approach-to-structuring-code-is-important">3. Having a balanced, holistic approach to structuring code is important</h2>
 
-<p>It’s incredibly easy to end up writing everything within the same <code class="language-plaintext highlighter-rouge">Update()</code> function. It’s also equally easy to split every functionality up into their separate <code class="language-plaintext highlighter-rouge">Update()</code> functions, to the point where you’ve lost track of what every other module is doing. Therefore, having a clear, abstracted view of what every module is doing and what elements they are manipulating under what conditions is pretty important, since many unexpected bugs appear from multiple modules manipulating the same element.</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><category term="C#" /><category term="Unity" /><summary type="html"><![CDATA[I recently completed INFO 5340, “Virtual and Augmented Reality”, at Cornell Tech. It was a pretty intense course which was very much focused on constant building week after week - in particular, in the 3D/game development context, with a particular focus on virtual reality. For our final group project, we were tasked with emulating features from a virtual headset 3D design tool, Gravity Sketch. While previous assignments had broken down our tasks into bite-sized pieces, the final project was assigned as-is: watch a video showing how a particular function is supposed to work, and replicate it any way you wish, making sure to respect fidelity to the original product + efficiency. This made the final project especially challenging, as we had to switch hats between product managing (how many features can we implement? what should we do first? who should take which function? is this feature of good quality? are there imperfections or lag? how would a real customer feel using this product?) as well as software engineering (how to efficiently/correctly implement a function? how to structure / refactor code properly? how to handle merge conflicts between different features worked on by different swes? how to catch and squash bugs?).]]></summary></entry><entry><title type="html">Simulating robots in digital twins - a basic ROS2/IsaacSim workflow</title><link href="http://localhost:4000/blog/jekyll/2025/01/10/isaacsim.html" rel="alternate" type="text/html" title="Simulating robots in digital twins - a basic ROS2/IsaacSim workflow" /><published>2025-01-10T20:00:00-05:00</published><updated>2025-01-10T20:00:00-05:00</updated><id>http://localhost:4000/blog/jekyll/2025/01/10/isaacsim</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2025/01/10/isaacsim.html"><![CDATA[<p>In this walkthrough, I will describe how I set up my Ubuntu system to simulate a simple search-and-move robot running on a ROS2 node within <a href="https://www.youtube.com/watch?v=lcee9ntkOjk">NVIDIA’s Isaac Sim</a>. The goal is to go through the entire pipeline, from importing a 3D model of the robot we are interested in, to articulating the joints/motors we wish to manipulate with our ROS node, to finally instantiating a ROS package and writing out the relevant code (in both Python and C++) within a node, and running it in conjunction with Isaac Sim to see if it works!</p>
+<p>It’s incredibly easy to end up writing everything within the same <code class="language-plaintext highlighter-rouge">Update()</code> function. It’s also equally easy to split every functionality up into their separate <code class="language-plaintext highlighter-rouge">Update()</code> functions, to the point where you’ve lost track of what every other module is doing. Therefore, having a clear, abstracted view of what every module is doing and what elements they are manipulating under what conditions is pretty important, since many unexpected bugs appear from multiple modules manipulating the same element.</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><category term="C#" /><category term="Unity" /><summary type="html"><![CDATA[I recently completed INFO 5340, “Virtual and Augmented Reality”, at Cornell Tech. It was a pretty intense course which was very much focused on constant building week after week - in particular, in the 3D/game development context, with a particular focus on virtual reality. For our final group project, we were tasked with emulating features from a virtual headset 3D design tool, Gravity Sketch. While previous assignments had broken down our tasks into bite-sized pieces, the final project was assigned as-is: watch a video showing how a particular function is supposed to work, and replicate it any way you wish, making sure to respect fidelity to the original product + efficiency. This made the final project especially challenging, as we had to switch hats between product managing (how many features can we implement? what should we do first? who should take which function? is this feature of good quality? are there imperfections or lag? how would a real customer feel using this product?) as well as software engineering (how to efficiently/correctly implement a function? how to structure / refactor code properly? how to handle merge conflicts between different features worked on by different swes? how to catch and squash bugs?).]]></summary></entry><entry><title type="html">Simulating robots in digital twins - a basic ROS2/IsaacSim workflow</title><link href="http://localhost:4000/blog/jekyll/2025/01/10/isaacsim.html" rel="alternate" type="text/html" title="Simulating robots in digital twins - a basic ROS2/IsaacSim workflow" /><published>2025-01-10T20:00:00-05:00</published><updated>2025-01-10T20:00:00-05:00</updated><id>http://localhost:4000/blog/jekyll/2025/01/10/isaacsim</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2025/01/10/isaacsim.html"><![CDATA[<p>In this walkthrough, I will describe how I set up my Ubuntu system to simulate a simple search-for-human-and-move robot running on a ROS2 node within <a href="https://www.youtube.com/watch?v=lcee9ntkOjk">NVIDIA’s Isaac Sim</a>. The goal is to go through the entire pipeline, from importing a 3D model of the robot we are interested in, to articulating the joints/motors we wish to manipulate with our ROS node, to finally instantiating a ROS package and writing out the relevant code (in both Python and C++) within a node, and running it in conjunction with Isaac Sim to see if it works!</p>
 
 <h3 id="motivation">Motivation</h3>
 
@@ -88,11 +88,11 @@
 
 <p><strong>(4)</strong> <a href="#articulating-robots-camera">Articulating sensors, eg. cameras</a></p>
 
-<p><strong>(5)</strong> Setting up a ROS2 package</p>
+<p><strong>(5)</strong> <a href="#setting-up-a-ros2-package">Setting up a ROS2 package</a></p>
 
-<p><strong>(6)</strong> Writing ROS2 nodes for a simple detect-and-follow FSM</p>
+<p><strong>(6)</strong> <a href="#writing-ros2-nodes-for-a-simple-detect-and-follow-fsm">Writing ROS2 nodes for a simple detect-and-follow FSM</a></p>
 
-<p><strong>(7)</strong> Results in Isaac Sim</p>
+<p><strong>(7)</strong> <a href="#results-in-isaac-sim">Results in Isaac Sim</a></p>
 
 <h3 id="compatibly-installing-isaac-sim-and-ros2">Compatibly installing Isaac Sim and ROS2</h3>
 
@@ -163,6 +163,8 @@ ros2 run xacro xacro <span class="nt">-o</span> &lt;filename&gt;.urdf &lt;filena
 
 <p>Next, we need to go to <code class="language-plaintext highlighter-rouge">Constant Token</code>, and for one, set the <code class="language-plaintext highlighter-rouge">Value</code> to <code class="language-plaintext highlighter-rouge">left_wheel_joint</code>, and the other’s <code class="language-plaintext highlighter-rouge">Value</code> to <code class="language-plaintext highlighter-rouge">right_wheel_joint</code>. Name may vary depending on your custom imported robot, so just explore a bit.</p>
 
+<p>The idea behind the above adjustments is that the <code class="language-plaintext highlighter-rouge">Articulation Controller</code> receives a velocity command from a ROS topic, and converts it to an actual physical action with respect to the relevant robot joints.</p>
+
 <p>Next, in the <code class="language-plaintext highlighter-rouge">Differential Controller</code>, we follow the tutorial and set:</p>
 
 <ul>
@@ -180,19 +182,105 @@ ros2 run xacro xacro <span class="nt">-o</span> &lt;filename&gt;.urdf &lt;filena
 
 <h3 id="articulating-robots-camera">Articulating robot’s camera</h3>
 
+<p>Now that we’ve articulated the robot’s motors, we will need to create a camera which will capture RGB images and publish that to the <code class="language-plaintext highlighter-rouge">/rgb</code> topic. Down the line, we will be able to use this image for the purposes of human detection. In turtlebot4’s case, we want to put a camera on the little bracket at the back of the bot.</p>
+
+<p>First, create a camera in Isaac Sim. Then, parent it under #TODO: WHAT’S THE JOINT NAME. If you’re using a custom robot, I faced quite a bit of problems trying to figure out the correct parent, but just keep going to the camera viewport and checking whether the image looks correct. Also, the camera begins by facing downwards, so here are some default settings that should help you make the camera face forward.</p>
+
+<p>#TODO: DEFAULT SETTINGS</p>
+
+<p>Once we’ve gotten the camera in place, we will next articulate the camera with the goal of getting it to publish image data to the <code class="language-plaintext highlighter-rouge">/rgb</code> topic. Create an action graph that looks like the following:</p>
+
 <p><img src="/assets/isaacsim-cameraactiongraph.png" alt="" /></p>
+
+<p>#TODO: targeting the camera helper, as well as the topic name to be published</p>
+
+<p>To test everything is working fine, click the play button in Isaac Sim, and run in terminal</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ros2 topic list <span class="c"># check if /rgb is being published</span>
+ros2 topic <span class="nb">echo</span> /rgb <span class="c"># this should print out many values - they are rgb values for each pixel</span>
+</code></pre></div></div>
+
+<p>Now, our simulated robot is controllable and can observe through its sensors! This is just a basic example, but there are many more components to explore: sensors, like lidar, or controllers, like joints. If you’d like a guide to articulating joints, you can watch this <a href="https://www.youtube.com/watch?v=dAOOo4uy_UY">helpful video</a>.</p>
 
 <h3 id="setting-up-a-ros2-package">Setting up a ROS2 package</h3>
 
+<p>Let’s move on to actually writing a program that observes and controls.</p>
+
+<p>Create your workspace (these folder peculiarities are just ROS conventions you have to get used to):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>hello_robot
+<span class="nb">cd </span>hello_robot
+<span class="nb">mkdir </span>src
+</code></pre></div></div>
+
+<p>In this walkthrough, we will be writing <em>primarily</em> in C++. So, here is the code to instantiate a ROS2 package:</p>
+
+<p>#TODO: copy code in</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+<p>What does a package do? It can contain multiple nodes, and is used to build all your programs consistently in one fell swoop.</p>
+
+<p>Now, whenever you create a package, the first thing you’ll want to think about are dependencies of your C++/Python code. In Python, you know off hand that you’ll need to <code class="language-plaintext highlighter-rouge">pip install &lt;package&gt;</code>. In ROS2, this is analogous to doing a <code class="language-plaintext highlighter-rouge">sudo apt install &lt;package&gt;</code> <em>and then</em> updating 2 important files: <code class="language-plaintext highlighter-rouge">package.xml</code> and <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> (C++) / <code class="language-plaintext highlighter-rouge">setup.py</code> (Python).</p>
+
+<p>Obviously you won’t know for sure what packages or dependencies you’ll be using ahead of time, but the basic flow goes like this. Let’s say we want to use <a href="http://wiki.ros.org/geometry_msgs"><code class="language-plaintext highlighter-rouge">geometry_msgs</code></a>.</p>
+
+<p>First, install the package at hand.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ros-humble-geometry-msgs
+</code></pre></div></div>
+
+<p>Update <code class="language-plaintext highlighter-rouge">package.xml</code>, which can be found in <code class="language-plaintext highlighter-rouge">{workspace_folder}/src/{node_folder}/</code>:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;depend&gt;</span>geometry_msgs<span class="nt">&lt;/depend&gt;</span>
+</code></pre></div></div>
+
+<p>Update <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code>, if using C++:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp"># fill this in in the top section, along with the rest of the find_package
+</span><span class="n">find_package</span><span class="p">(</span><span class="n">geometry_msgs</span> <span class="n">REQUIRED</span><span class="p">)</span>
+
+<span class="cp"># fill this in after add_executable(...)
+</span><span class="n">ament_target_dependencies</span><span class="p">(</span><span class="o">&lt;</span><span class="n">robot_node_name</span><span class="o">&gt;</span> <span class="n">rclcpp</span> <span class="n">geometry_msgs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>In my particular case, I am using both Python and C++, so <a href="https://github.com/samyooole/hello-robot/blob/main/src/hello_robot_package/package.xml">here</a> is my <code class="language-plaintext highlighter-rouge">package.xml</code>, and <a href="https://github.com/samyooole/hello-robot/blob/main/src/hello_robot_package/CMakeLists.txt">here</a> is my <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> for your reference.</p>
+
 <h3 id="writing-ros2-nodes-for-a-simple-detect-and-follow-fsm">Writing ROS2 nodes for a simple detect-and-follow FSM</h3>
 
+<p>Now that we’ve got the legwork out of the way, we want to write nodes which will fulfill a simple purpose: try to find a human, then move towards that human.</p>
+
+<p>A simple FSM looks like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SEARCH -- if detect human --&gt; FORWARD
+SEARCH -- if don't detect human --&gt; SEARCH
+FORWARD -- if don't detect human --&gt; SEARCH
+FORWARD -- if detect human --&gt; FORWARD
+</code></pre></div></div>
+
+<p>In my case, I choose to write the overall FSM in C++, which is in the main node file <code class="language-plaintext highlighter-rouge">{workspace_folder}/src/{node_folder}/src/hello_robot_node.cpp</code>. You can refer to my code <a href="https://github.com/samyooole/hello-robot/blob/main/src/hello_robot_package/src/hello_robot_node.cpp">here</a>.</p>
+
+<p>I separate concerns by writing the human detection algorithm in Python, which is in a separate folder: <code class="language-plaintext highlighter-rouge">{workspace_folder}/src/{node_folder}/scripts/human_det_node.py</code>. You can refer to my code <a href="https://github.com/samyooole/hello-robot/blob/main/src/hello_robot_package/scripts/human_det_node.py">here</a>.</p>
+
+<h4 id="important-basic-building-workflow-in-ros2">(IMPORTANT!) Basic building workflow in ROS2</h4>
+<p>Once you’ve copied all that code in, you can now build and run. Here is the basic workflow:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># in your overall workspace folder, run:</span>
+<span class="nb">source</span> /opt/ros/humble/setup.bash <span class="c"># sources ROS</span>
+colcon build <span class="c"># builds all changes in your node code</span>
+<span class="nb">source install</span>/setup.bash <span class="c"># informs ROS of new dependencies etc</span>
+ros2 run hello_robot_package human_det_node.py &amp; <span class="c"># run human detection node while also</span>
+ros2 run hello_robot_package hello_robot_node <span class="c"># running the hello robot node</span>
+</code></pre></div></div>
+
 <h3 id="results-in-isaac-sim">Results in Isaac Sim</h3>
+
+<p>Now, you can click play in Isaac Sim, and you should see the following results!</p>
 
 <p><img src="/assets/isaacsim.gif" alt="" /></p>
 
 <h3 id="credits-and-stuff">Credits and stuff</h3>
 
-<p>Credits to this <a href="https://www.youtube.com/watch?v=dAOOo4uy_UY">Youtube video</a> for being a huge guide!</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><category term="ROS2" /><category term="C/C++" /><category term="Python" /><summary type="html"><![CDATA[In this walkthrough, I will describe how I set up my Ubuntu system to simulate a simple search-and-move robot running on a ROS2 node within NVIDIA’s Isaac Sim. The goal is to go through the entire pipeline, from importing a 3D model of the robot we are interested in, to articulating the joints/motors we wish to manipulate with our ROS node, to finally instantiating a ROS package and writing out the relevant code (in both Python and C++) within a node, and running it in conjunction with Isaac Sim to see if it works!]]></summary></entry><entry><title type="html">Apart, an extremely detailed political map of North Carolina</title><link href="http://localhost:4000/blog/jekyll/2024/08/02/apart.html" rel="alternate" type="text/html" title="Apart, an extremely detailed political map of North Carolina" /><published>2024-08-02T21:00:00-04:00</published><updated>2024-08-02T21:00:00-04:00</updated><id>http://localhost:4000/blog/jekyll/2024/08/02/apart</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2024/08/02/apart.html"><![CDATA[<p>When doing my senior thesis in Economics, I discovered a treasure trove of data. The North Carolina State Board of Elections maintains a <a href="https://www.ncsbe.gov/results-data/voter-registration-data">record</a> of public use, individual-level voter registration data for the past 15 years. Each individual is uniquely identified, characterized demographically, and located via home address. After geo-coding these home addresses, I was able to get the rooftop-level location of every single registered voter in North Carolina.</p>
+<p>Credits to this <a href="https://www.youtube.com/watch?v=dAOOo4uy_UY">Youtube video</a> for being a huge guide!</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><category term="ROS2" /><category term="C/C++" /><category term="Python" /><summary type="html"><![CDATA[In this walkthrough, I will describe how I set up my Ubuntu system to simulate a simple search-for-human-and-move robot running on a ROS2 node within NVIDIA’s Isaac Sim. The goal is to go through the entire pipeline, from importing a 3D model of the robot we are interested in, to articulating the joints/motors we wish to manipulate with our ROS node, to finally instantiating a ROS package and writing out the relevant code (in both Python and C++) within a node, and running it in conjunction with Isaac Sim to see if it works!]]></summary></entry><entry><title type="html">Apart, an extremely detailed political map of North Carolina</title><link href="http://localhost:4000/blog/jekyll/2024/08/02/apart.html" rel="alternate" type="text/html" title="Apart, an extremely detailed political map of North Carolina" /><published>2024-08-02T21:00:00-04:00</published><updated>2024-08-02T21:00:00-04:00</updated><id>http://localhost:4000/blog/jekyll/2024/08/02/apart</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2024/08/02/apart.html"><![CDATA[<p>When doing my senior thesis in Economics, I discovered a treasure trove of data. The North Carolina State Board of Elections maintains a <a href="https://www.ncsbe.gov/results-data/voter-registration-data">record</a> of public use, individual-level voter registration data for the past 15 years. Each individual is uniquely identified, characterized demographically, and located via home address. After geo-coding these home addresses, I was able to get the rooftop-level location of every single registered voter in North Carolina.</p>
 
 <p>I then decided to develop a web app which would allow you to visualize where residents of different parties were staying, at different levels of detail. Enter… <strong>apart</strong>!</p>
 
