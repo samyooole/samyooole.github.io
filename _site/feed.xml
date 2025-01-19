@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-12T11:43:35-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Samuel Ho</title><subtitle>Building bespoke tech solutions for the public good 🌱</subtitle><entry><title type="html">A simple virtual reality 3D design tool made with Unity/C#</title><link href="http://localhost:4000/blog/jekyll/2025/01/10/vr.html" rel="alternate" type="text/html" title="A simple virtual reality 3D design tool made with Unity/C#" /><published>2025-01-10T20:00:00-05:00</published><updated>2025-01-10T20:00:00-05:00</updated><id>http://localhost:4000/blog/jekyll/2025/01/10/vr</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2025/01/10/vr.html"><![CDATA[<p>I recently completed <a href="https://test-classes.ssit.cucloud.net/browse/roster/FA24/class/INFO/5340">INFO 5340</a>, “Virtual and Augmented Reality”, at Cornell Tech. It was a pretty intense course which was very much focused on constant building week after week - in particular, in the 3D/game development context, with a particular focus on virtual reality. For our final group project, we were tasked with emulating features from a virtual headset 3D design tool, <a href="https://gravitysketch.com">Gravity Sketch</a>. While previous assignments had broken down our tasks into bite-sized pieces, the final project was assigned as-is: watch a video showing how a particular function is supposed to work, and replicate it any way you wish, making sure to respect fidelity to the original product + efficiency. This made the final project especially challenging, as we had to switch hats between product managing (how many features can we implement? what should we do first? who should take which function? is this feature of good quality? are there imperfections or lag? how would a real customer feel using this product?) as well as software engineering (how to efficiently/correctly implement a function? how to structure / refactor code properly? how to handle merge conflicts between different features worked on by different swes? how to catch and squash bugs?).</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-19T13:11:24-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Samuel Ho</title><subtitle>Building bespoke tech solutions for the public good 🌱</subtitle><entry><title type="html">A simple virtual reality 3D design tool made with Unity/C#</title><link href="http://localhost:4000/blog/jekyll/2025/01/10/vr.html" rel="alternate" type="text/html" title="A simple virtual reality 3D design tool made with Unity/C#" /><published>2025-01-10T20:00:00-05:00</published><updated>2025-01-10T20:00:00-05:00</updated><id>http://localhost:4000/blog/jekyll/2025/01/10/vr</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2025/01/10/vr.html"><![CDATA[<p>I recently completed <a href="https://test-classes.ssit.cucloud.net/browse/roster/FA24/class/INFO/5340">INFO 5340</a>, “Virtual and Augmented Reality”, at Cornell Tech. It was a pretty intense course which was very much focused on constant building week after week - in particular, in the 3D/game development context, with a particular focus on virtual reality. For our final group project, we were tasked with emulating features from a virtual headset 3D design tool, <a href="https://gravitysketch.com">Gravity Sketch</a>. While previous assignments had broken down our tasks into bite-sized pieces, the final project was assigned as-is: watch a video showing how a particular function is supposed to work, and replicate it any way you wish, making sure to respect fidelity to the original product + efficiency. This made the final project especially challenging, as we had to switch hats between product managing (how many features can we implement? what should we do first? who should take which function? is this feature of good quality? are there imperfections or lag? how would a real customer feel using this product?) as well as software engineering (how to efficiently/correctly implement a function? how to structure / refactor code properly? how to handle merge conflicts between different features worked on by different swes? how to catch and squash bugs?).</p>
 
 <p>We were almost completely on our own, and I think this was what made it an especially rewarding experience, since we ultimately developed a pretty good intuition for vector graphics + state management and got pretty good practice in writing C# day in, day out.</p>
 
@@ -60,7 +60,139 @@
 
 <h2 id="3-having-a-balanced-holistic-approach-to-structuring-code-is-important">3. Having a balanced, holistic approach to structuring code is important</h2>
 
-<p>It’s incredibly easy to end up writing everything within the same <code class="language-plaintext highlighter-rouge">Update()</code> function. It’s also equally easy to split every functionality up into their separate <code class="language-plaintext highlighter-rouge">Update()</code> functions, to the point where you’ve lost track of what every other module is doing. Therefore, having a clear, abstracted view of what every module is doing and what elements they are manipulating under what conditions is pretty important, since many unexpected bugs appear from multiple modules manipulating the same element.</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><category term="C#" /><category term="Unity" /><summary type="html"><![CDATA[I recently completed INFO 5340, “Virtual and Augmented Reality”, at Cornell Tech. It was a pretty intense course which was very much focused on constant building week after week - in particular, in the 3D/game development context, with a particular focus on virtual reality. For our final group project, we were tasked with emulating features from a virtual headset 3D design tool, Gravity Sketch. While previous assignments had broken down our tasks into bite-sized pieces, the final project was assigned as-is: watch a video showing how a particular function is supposed to work, and replicate it any way you wish, making sure to respect fidelity to the original product + efficiency. This made the final project especially challenging, as we had to switch hats between product managing (how many features can we implement? what should we do first? who should take which function? is this feature of good quality? are there imperfections or lag? how would a real customer feel using this product?) as well as software engineering (how to efficiently/correctly implement a function? how to structure / refactor code properly? how to handle merge conflicts between different features worked on by different swes? how to catch and squash bugs?).]]></summary></entry><entry><title type="html">Apart, an extremely detailed political map of North Carolina</title><link href="http://localhost:4000/blog/jekyll/2024/08/02/apart.html" rel="alternate" type="text/html" title="Apart, an extremely detailed political map of North Carolina" /><published>2024-08-02T21:00:00-04:00</published><updated>2024-08-02T21:00:00-04:00</updated><id>http://localhost:4000/blog/jekyll/2024/08/02/apart</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2024/08/02/apart.html"><![CDATA[<p>When doing my senior thesis in Economics, I discovered a treasure trove of data. The North Carolina State Board of Elections maintains a <a href="https://www.ncsbe.gov/results-data/voter-registration-data">record</a> of public use, individual-level voter registration data for the past 15 years. Each individual is uniquely identified, characterized demographically, and located via home address. After geo-coding these home addresses, I was able to get the rooftop-level location of every single registered voter in North Carolina.</p>
+<p>It’s incredibly easy to end up writing everything within the same <code class="language-plaintext highlighter-rouge">Update()</code> function. It’s also equally easy to split every functionality up into their separate <code class="language-plaintext highlighter-rouge">Update()</code> functions, to the point where you’ve lost track of what every other module is doing. Therefore, having a clear, abstracted view of what every module is doing and what elements they are manipulating under what conditions is pretty important, since many unexpected bugs appear from multiple modules manipulating the same element.</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><category term="C#" /><category term="Unity" /><summary type="html"><![CDATA[I recently completed INFO 5340, “Virtual and Augmented Reality”, at Cornell Tech. It was a pretty intense course which was very much focused on constant building week after week - in particular, in the 3D/game development context, with a particular focus on virtual reality. For our final group project, we were tasked with emulating features from a virtual headset 3D design tool, Gravity Sketch. While previous assignments had broken down our tasks into bite-sized pieces, the final project was assigned as-is: watch a video showing how a particular function is supposed to work, and replicate it any way you wish, making sure to respect fidelity to the original product + efficiency. This made the final project especially challenging, as we had to switch hats between product managing (how many features can we implement? what should we do first? who should take which function? is this feature of good quality? are there imperfections or lag? how would a real customer feel using this product?) as well as software engineering (how to efficiently/correctly implement a function? how to structure / refactor code properly? how to handle merge conflicts between different features worked on by different swes? how to catch and squash bugs?).]]></summary></entry><entry><title type="html">Simulating robots in digital twins - a basic ROS2/IsaacSim workflow</title><link href="http://localhost:4000/blog/jekyll/2025/01/10/isaacsim.html" rel="alternate" type="text/html" title="Simulating robots in digital twins - a basic ROS2/IsaacSim workflow" /><published>2025-01-10T20:00:00-05:00</published><updated>2025-01-10T20:00:00-05:00</updated><id>http://localhost:4000/blog/jekyll/2025/01/10/isaacsim</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2025/01/10/isaacsim.html"><![CDATA[<p>In this walkthrough, I will describe how I set up my Ubuntu system to simulate a simple search-and-move robot running on a ROS2 node within <a href="https://www.youtube.com/watch?v=lcee9ntkOjk">NVIDIA’s Isaac Sim</a>. The goal is to go through the entire pipeline, from importing a 3D model of the robot we are interested in, to articulating the joints/motors we wish to manipulate with our ROS node, to finally instantiating a ROS package and writing out the relevant code (in both Python and C++) within a node, and running it in conjunction with Isaac Sim to see if it works!</p>
+
+<h3 id="motivation">Motivation</h3>
+
+<p>First up, <em>what</em> is simulating robots in digital twins? In simulators like Isaac Sim, <a href="https://gazebosim.org/home">Gazebo</a>, <a href="https://mujoco.org/">MuJoCo</a> and more, we can test robots in high-fidelity environments driven by sophisticated graphics and physics engines. <em>Why</em> we want to do that is - assuming the simulation is <a href="https://www.andrew.cmu.edu/course/10-703/slides/Lecture_sim2realmaxentRL.pdf">sufficiently faithful</a> to reality - primarily because the debug cycle with real robots can be exponentially longer than simple on-computer development, thereby extending development time excessively. Furthermore, testing in real life can lead to wear and tear, as well as unexpected safety issues. From a reinforcement learning perspective, testing in simulation, when sped up and massively parallelized, can also lead to faster training across a larger number of samples.</p>
+
+<h3 id="workflow-framework">Workflow framework</h3>
+
+<p><img src="/assets/isaacsim-workflow.png" alt="" /></p>
+
+<p>Let’s describe a classic write-and-test workflow (in orange) in real life. Usually, we’re given a template robot with pre-defined routines to control its joints/motors, or we physically build a robot and expose its joints/motors as endpoints to be manipulated by on-board processes. Then, we write some control loop (eg. a manually-defined finite state machine, optimal control or reinforcement learning algorithm, or some combination of all of them) within a ROS2 package composed of various nodes with separated concerns. Finally, we spin up the relevant nodes on the real robot, which publish to topics which manipulate control components, while subscribing to topics which receive data from sensors (eg. RGB camera, lidar).</p>
+
+<p>We want to replace real-life articulation and testing in a simulator like Isaac Sim. For our simulated workflow (in red), we must (1) virtually articulate our robots’ joints and motors, which is primarily done with a visual scripting tool called Action Graphs, then (2) write our ROS2 code as before to actually program control of the robot, then (3) test run in Isaac Sim. This may require extra steps like designing/importing a digital twin environment or assets like humans.</p>
+
+<p>The overarching goal is to articulate our virtual robot as faithfully to a template robot we are provided, or else to build our physical robot as faithfully to our ideal virtual robot, so that we can write a ROS2 package that effortlessly runs similarly whether it’s in the simulation or in real life. This way, once we’ve gotten past the fixed overhead associated with setting up the Isaac Sim environment/assets, we can quickly iterate on the crucial part - the ROS2 / robot control code - in sim, with the eventual goal of minimizing test time in reality.</p>
+
+<h3 id="in-this-walkthrough">In this walkthrough…</h3>
+
+<p>Now that we understand why we’re doing this, let me describe what I will be going through in this walkthrough.</p>
+
+<p><strong>(1)</strong> <a href="#compatibly-installing-isaac-sim-and-ros2">A brief guide to (compatibly) installing Isaac Sim and ROS2</a></p>
+
+<p><strong>(2)</strong> <a href="#environment-and-asset-setup">Importing a .urdf (robot model) to Isaac Sim + tuning + setting up the environment</a></p>
+
+<p><strong>(3)</strong> <a href="#articulating-robots-motors">Articulating the virtual robot’s basic motors in Isaac Sim</a></p>
+
+<p><strong>(4)</strong> <a href="#articulating-robots-camera">Articulating sensors, eg. cameras</a></p>
+
+<p><strong>(5)</strong> Setting up a ROS2 package</p>
+
+<p><strong>(6)</strong> Writing ROS2 nodes for a simple detect-and-follow FSM</p>
+
+<p><strong>(7)</strong> Results in Isaac Sim</p>
+
+<h3 id="compatibly-installing-isaac-sim-and-ros2">Compatibly installing Isaac Sim and ROS2</h3>
+
+<p>All details for installing Isaac Sim can be found <a href="https://docs.omniverse.nvidia.com/isaacsim/latest/installation/index.html">here</a>. I won’t say much about this as it’s quite straightforward. I WILL say, however, that in order for it to be straightforward, the following is EXTREMELY recommended:</p>
+
+<ul>
+  <li><strong>Use <a href="https://releases.ubuntu.com/jammy/">Ubuntu 22.04</a></strong>. I tried finagling with Windows and WSL but there’s way too much overhead associated with getting different components to recognize each other. It’s <em>just faster</em> to create a partition for Ubuntu. Do note that you <em>have</em> to use Ubuntu 22.04 specifically because Isaac Sim only supports up to ROS2 Humble, which is not compatible with Ubuntu &gt;22.</li>
+  <li><strong>Use ROS2 Humble</strong>. As stated before, ROS2 Humble is maximally compatible with Isaac Sim.</li>
+  <li><strong>Remember to source ROS before opening Isaac Sim</strong>, and take note of install instructions to make sure ROS2 Bridge is working.</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> /opt/ros/humble/setup.bash
+</code></pre></div></div>
+
+<h3 id="environment-and-asset-setup">Environment and asset setup</h3>
+
+<p>The relevant official tutorials for this portion can be found <a href="https://docs.omniverse.nvidia.com/isaacsim/latest/ros2_tutorials/tutorial_ros2_turtlebot.html">here</a>.</p>
+
+<h4 id="setting-up-a-basic-environment">Setting up a basic environment</h4>
+
+<p>Our robot needs a floor to stand on. If you’ve completed the full <a href="https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html">workstation installation</a> for Isaac Sim, they provide plenty of environment/human/robot asset templates.</p>
+
+<p>I shall import a basic floor.</p>
+
+<p><img src="/assets/isaacsim-defaultenv.png" alt="" /></p>
+
+<p>As you can see, in the window in the bottom, you can find lots of default templates in the Omniverse. Please follow the path in the above screenshot (may change from year to year, of course) and drag the <code class="language-plaintext highlighter-rouge">default_environment.usd</code> file into the blank space above.</p>
+
+<h4 id="importing-a-custom-robot">Importing a custom robot</h4>
+
+<p>I’m looking to Sim2Real a <a href="https://turtlebot.github.io/turtlebot4-user-manual/">turtlebot4</a>. Therefore, I’ll have to find a .urdf model online myself.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/turtlebot/turtlebot4.git
+</code></pre></div></div>
+
+<p>Now, you’ll find the .urdf file (a 3D model with some added physical modeling for control components like joints/motors) for the turtlebot4 in <code class="language-plaintext highlighter-rouge">turtlebot4/turtlebot4_description/urdf/standard/turtlebot4.urdf.xacro</code>.</p>
+
+<p>Isaac Sim only reads .urdf files, so we’ll have to convert this file.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Update and install converter along with dependencies</span>
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt <span class="nb">install </span>ros-humble-xacro
+<span class="nb">sudo </span>apt <span class="nb">install </span>ros-humble-irobot-create-control
+
+<span class="c"># Follow this format</span>
+ros2 run xacro xacro <span class="nt">-o</span> &lt;filename&gt;.urdf &lt;filename&gt;.urdf.xacro
+</code></pre></div></div>
+
+<p>Now, you can drag this .urdf model into your Isaac Sim environment!</p>
+
+<h4 id="tuning">Tuning</h4>
+
+<p>You may have to tune some joints, motors or weights to make sure the robot is balanced/can move appropriately. For this turtlebot4 model, for some bizarre reason, there is a phantom mass in front of the turtlebot4 which helps it balance on the forward/backward axis. I have to increase its mass so that the bot is not leaning backwards.</p>
+
+<p>Selecting the turtlebot4 in the sidebar, go to <code class="language-plaintext highlighter-rouge">turtlebot4&gt;front_caster_link</code>, and scroll down the bottom right property window, and set <code class="language-plaintext highlighter-rouge">Mass</code> to 1.5.</p>
+
+<p><img src="/assets/isaacsim-mass.png" alt="" /></p>
+
+<h3 id="articulating-robots-motors">Articulating robot’s motors</h3>
+
+<p>Now that we’ve imported our robot, we will need to articulate its motors. This basically means that we tell the computer that it can control those particular motors, and in our particular case, through ROS2 topics. The main way to do this in Isaac Sim is through a visual scripting tool called <a href="https://docs.omniverse.nvidia.com/isaacsim/latest/ros2_tutorials/tutorial_ros2_drive_turtlebot.html">Action Graphs</a>, although options are also available to script these using Python. We’ll focus on Action Graphs in this walkthrough since it’s pretty straightforward.</p>
+
+<p>Create an Action Graph in <code class="language-plaintext highlighter-rouge">Window &gt; Visual Scripting &gt; Action Graph</code>. Then, add components to look something like this:</p>
+
+<p><img src="/assets/isaacsim-moveactiongraph.png" alt="" /></p>
+
+<p>We need to go to the <code class="language-plaintext highlighter-rouge">Articulation Controller</code>, pull up its property window, and set the <code class="language-plaintext highlighter-rouge">targetPrim</code> to be <code class="language-plaintext highlighter-rouge">/World/turtlebot4/base_link</code>. For your own custom imported robot, you will need to set a <code class="language-plaintext highlighter-rouge">targetPrim</code> to whatever has an <code class="language-plaintext highlighter-rouge">Articulation Root</code>.</p>
+
+<p>Next, we need to go to <code class="language-plaintext highlighter-rouge">Constant Token</code>, and for one, set the <code class="language-plaintext highlighter-rouge">Value</code> to <code class="language-plaintext highlighter-rouge">left_wheel_joint</code>, and the other’s <code class="language-plaintext highlighter-rouge">Value</code> to <code class="language-plaintext highlighter-rouge">right_wheel_joint</code>. Name may vary depending on your custom imported robot, so just explore a bit.</p>
+
+<p>Next, in the <code class="language-plaintext highlighter-rouge">Differential Controller</code>, we follow the tutorial and set:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">maxLinearSpeed: 0.22</code></li>
+  <li><code class="language-plaintext highlighter-rouge">wheelDistance: 0.16</code></li>
+  <li><code class="language-plaintext highlighter-rouge">wheelRadius: 0.025</code></li>
+</ul>
+
+<p>To test everything is working fine, click the play button in Isaac Sim, and run in terminal</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ros2 topic pub /cmd_vel geometry_msgs/Twist <span class="s2">"{'linear': {'x': 0.2, 'y': 0.0, 'z': 0.0}, 'angular': {'x': 0.0, 'y': 0.0, 'z': 0.0}}"</span>
+</code></pre></div></div>
+
+<p>The robot should be moving forward now.</p>
+
+<h3 id="articulating-robots-camera">Articulating robot’s camera</h3>
+
+<p><img src="/assets/isaacsim-cameraactiongraph.png" alt="" /></p>
+
+<h3 id="setting-up-a-ros2-package">Setting up a ROS2 package</h3>
+
+<h3 id="writing-ros2-nodes-for-a-simple-detect-and-follow-fsm">Writing ROS2 nodes for a simple detect-and-follow FSM</h3>
+
+<h3 id="results-in-isaac-sim">Results in Isaac Sim</h3>
+
+<p><img src="/assets/isaacsim.gif" alt="" /></p>
+
+<h3 id="credits-and-stuff">Credits and stuff</h3>
+
+<p>Credits to this <a href="https://www.youtube.com/watch?v=dAOOo4uy_UY">Youtube video</a> for being a huge guide!</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><category term="ROS2" /><category term="C/C++" /><category term="Python" /><summary type="html"><![CDATA[In this walkthrough, I will describe how I set up my Ubuntu system to simulate a simple search-and-move robot running on a ROS2 node within NVIDIA’s Isaac Sim. The goal is to go through the entire pipeline, from importing a 3D model of the robot we are interested in, to articulating the joints/motors we wish to manipulate with our ROS node, to finally instantiating a ROS package and writing out the relevant code (in both Python and C++) within a node, and running it in conjunction with Isaac Sim to see if it works!]]></summary></entry><entry><title type="html">Apart, an extremely detailed political map of North Carolina</title><link href="http://localhost:4000/blog/jekyll/2024/08/02/apart.html" rel="alternate" type="text/html" title="Apart, an extremely detailed political map of North Carolina" /><published>2024-08-02T21:00:00-04:00</published><updated>2024-08-02T21:00:00-04:00</updated><id>http://localhost:4000/blog/jekyll/2024/08/02/apart</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/2024/08/02/apart.html"><![CDATA[<p>When doing my senior thesis in Economics, I discovered a treasure trove of data. The North Carolina State Board of Elections maintains a <a href="https://www.ncsbe.gov/results-data/voter-registration-data">record</a> of public use, individual-level voter registration data for the past 15 years. Each individual is uniquely identified, characterized demographically, and located via home address. After geo-coding these home addresses, I was able to get the rooftop-level location of every single registered voter in North Carolina.</p>
 
 <p>I then decided to develop a web app which would allow you to visualize where residents of different parties were staying, at different levels of detail. Enter… <strong>apart</strong>!</p>
 
